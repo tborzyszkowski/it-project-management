@@ -166,33 +166,53 @@ Prowadzący czyta scenariusze, studenci wskazują rolę:
 
 ### 4. Narzędzia w projektach IT (10 min)
 
-#### Azure DevOps – plan bezpłatny (Basic)
+#### Jira – plan bezpłatny (Free)
 
 | Moduł | Funkcje | Używamy dziś |
 |---|---|---|
-| **Boards** | Backlog, Kanban, Sprint Board, Queries | ✅ Tak |
-| **Repos** | Repozytoria Git | Nie |
-| **Pipelines** | CI/CD automatyzacja | Nie |
-| **Test Plans** | Testy manualne | Nie |
-| **Artifacts** | Pakiety (npm, NuGet) | Nie |
+| **Backlog** | Product Backlog, Sprint Backlog, priorytety | ✅ Tak |
+| **Board** | Tablica Scrum / Kanban, przepływ zadań | ✅ Tak |
+| **Roadmap** | Epici i harmonogram | ✅ Tak |
+| **Reports** | Burndown, Velocity, Cumulative Flow | Poglądowo |
+| **Pages** | Wiki, Definition of Done | ✅ Tak |
 
-**Ograniczenia planu Basic:**  
-- Max **5 użytkowników** (powyżej – płatny plan Basic+),  
-- **1800 minut/miesiąc** Pipelines (nie używamy dziś),  
-- Nieograniczone projekty, repozytoria i Boards.
+**Ograniczenia planu Free:**
+- Max **10 użytkowników** na projekt,
+- Brak zaawansowanych raportów i Time Tracking,
+- Nieograniczone projekty i tablice w ramach limitu użytkowników.
 
-#### Jira – plan bezpłatny
+#### Azure DevOps (ADO) – plan bezpłatny (Basic)
 
-- Max **10 użytkowników**, funkcje Scrum + Kanban,  
-- Brak zaawansowanych raportów i Time Tracking,  
-- Dobre dla startupów i małych zespołów.
+| Moduł | Funkcje | Odpowiednik Jira |
+|---|---|---|
+| **Boards** | Backlog, Kanban, Sprint Board | Backlog + Board |
+| **Repos** | Repozytoria Git | *(brak w Jira Free)* |
+| **Pipelines** | CI/CD automatyzacja | *(brak w Jira Free)* |
+| **Wiki** | Dokumentacja zespołu | Pages |
 
-#### Dlaczego ADO na tych zajęciach?
+**Ograniczenia planu Basic:**
+- Tworzenie organizacji wymaga **konta służbowego / szkolnego Microsoft 365** lub subskrypcji Azure — osobiste konta Outlook.com nie wystarczą (zmiana polityki Microsoft od 2023 r.),
+- Max 5 użytkowników na bezpłatnym planie Basic (powyżej — płatny),
+- Natywna integracja z Microsoft 365 i GitHub.
 
-- Bez karty płatniczej,  
-- Konto Microsoft wystarczy (wielu studentów już ma),  
-- Natywna integracja z Microsoft 365 (istotna dla środowisk BIM),  
-- Rozbudowany darmowy tier dla edukacji.
+#### Porównanie – Jira Free vs Azure DevOps Free
+
+| Cecha | Jira Free | Azure DevOps Basic |
+|---|---|---|
+| Rejestracja | Dowolny e-mail | Wymaga konta M365 / subskrypcji Azure |
+| Maks. użytkownicy | 10 | 5 |
+| Scrum Boards | ✅ | ✅ |
+| Kanban | ✅ | ✅ |
+| Repozytoria Git | ❌ | ✅ |
+| CI/CD | ❌ | ✅ |
+| Edukacja / szkolenia | Intuicyjny UI | Rozbudowany, bardziej korporacyjny |
+
+#### Dlaczego Jira na tych zajęciach?
+
+- Rejestracja **bez karty płatniczej i bez konta Microsoft** — wystarczy dowolny e-mail,
+- Plan Free obsługuje do **10 użytkowników** — wystarczy na cały zespół,
+- Najpopularniejsze narzędzie Agile/Scrum na rynku (Atlassian Jira używa ponad 300 000 firm),
+- Intuicyjny interfejs backlogu — łatwy do opanowania w trakcie jednych zajęć.
 
 ---
 

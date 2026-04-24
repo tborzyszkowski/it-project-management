@@ -254,18 +254,19 @@ Kwiecień 2026
 | Integracja MS 365 | Natywna ✅ | Plugin |
 | Repozytorium Git | ✅ | ✅ |
 | Karta płatnicza | ❌ nie trzeba | ❌ nie trzeba |
+| Konto wymagane | Microsoft 365 / Azure | Dowolny e-mail |
 
 ---
 
-# Dlaczego Azure DevOps dziś?
+# Dlaczego Jira dziś?
 
 - ✅ Bez karty płatniczej
-- ✅ Konto Microsoft wystarczy
-- ✅ Natywna integracja z Microsoft 365
-- ✅ Istotny dla środowisk BIM / Microsoft
-- ✅ Rozbudowany darmowy tier dla edukacji
+- ✅ Dowolny e-mail – bez konta Microsoft
+- ✅ Do 10 użytkowników za darmo
+- ✅ Najpopularniejsze narzędzie Agile/Scrum na rynku
+- ✅ Intuicyjny interfejs – łatwy do opanowania od zera
 
-> W pracy możesz używać Jiry – koncepcje są **identyczne**
+> Azure DevOps wymaga dziś konta Microsoft 365 lub subskrypcji Azure do założenia organizacji
 
 ---
 
@@ -286,6 +287,6 @@ Kwiecień 2026
 ## Następnie: Blok 1B – Przygotowanie
 
 - Podział na zespoły i losowanie gatunków
-- Zakładanie kont Azure DevOps
+- Zakładanie kont Jira
 - Konfiguracja projektu i backlogu
 - **Sprint Planning** – zaplanujemy nasz sprint!
