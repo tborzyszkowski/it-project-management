@@ -39,74 +39,149 @@ Wylosuj karteczkę z gatunkiem powieści i uzupełnij:
 
 ## Krok 2 – Zakładanie kont Azure DevOps
 
-**Czas: 15 minut | Wykonuje: Scrum Master (wszyscy obserwują)**
+**Czas: 15 minut | Wykonuje: Scrum Master (wszyscy obserwują i powtarzają na swoich komputerach)**
 
-### Zadanie 2.1 – Rejestracja i tworzenie organizacji
-
-1. Otwórz przeglądarkę i przejdź na: **https://dev.azure.com**
-
-2. Kliknij przycisk **„Start free"** (niebieski przycisk na środku strony).
-
-3. Zaloguj się:
-   - ✅ Masz konto Microsoft (Outlook, Hotmail, Live)? → Zaloguj się.
-   - ❌ Nie masz konta? → Kliknij „Create one!" i załóż konto Outlook.com.
-
-4. Po zalogowaniu zostaniesz przekierowany do kreatora organizacji:
-   - Wpisz nazwę organizacji: `bim-[waszazespolu]`  
-     *(np. `bim-kryminal`, `bim-horror`, `bim-romans`)*
-   - Wybierz region: **West Europe**
-   - Kliknij **„Continue"**
-
-5. Pojawi się kreator nowego projektu – **NIE twórz jeszcze projektu**, przejdź do Zadania 2.2.
+> ⚠️ **Przed startem**: każdy uczestnik potrzebuje adresu e-mail dostępnego na swoim komputerze (do odebrania zaproszenia). Konto Microsoft zakłada **Scrum Master** — reszta dołącza przez zaproszenie.
 
 ---
 
-### Zadanie 2.2 – Zaproszenie członków zespołu
+### Zadanie 2.1 – Założenie konta Microsoft (jeśli nie masz)
+
+> ✅ Masz już konto Outlook.com / Hotmail / Live / konto Microsoft 365 (służbowe lub szkolne)? **Pomiń ten krok i przejdź do Zadania 2.2.**
+
+1. Otwórz przeglądarkę i wejdź na: **https://signup.live.com**
+
+2. W polu **„Utwórz adres e-mail"** wpisz wybraną nazwę użytkownika, np. `jan.kowalski.bim`  
+   → domena: `@outlook.com`  
+   → kliknij **„Dalej"**
+
+3. Ustaw hasło (min. 8 znaków, wielka litera + cyfra) → kliknij **„Dalej"**
+
+4. Podaj imię i nazwisko → kliknij **„Dalej"**
+
+5. Wybierz kraj **(Polska)** i datę urodzenia → kliknij **„Dalej"**
+
+6. Rozwiąż captcha (puzzle graficzne) → kliknij **„Dalej"**
+
+7. Konto jest gotowe. Zapamiętaj lub zapisz:
+   - **Login**: `jan.kowalski.bim@outlook.com`
+   - **Hasło**: *(zapisz w bezpiecznym miejscu)*
+
+---
+
+### Zadanie 2.2 – Logowanie do Azure DevOps i tworzenie organizacji
 
 **Wykonuje: Scrum Master**
 
-1. Kliknij ikonę koła zębatego ⚙️ (prawy dolny róg, przy nazwie organizacji) → **„Organization Settings"**
+1. Otwórz przeglądarkę i przejdź na: **https://dev.azure.com**
 
-2. W lewym menu wybierz **„Users"**
+2. Na środku strony kliknij niebieski przycisk **„Start free"**.
 
-3. Kliknij **„Add users"**
+3. Pojawi się ekran logowania Microsoft:
+   - Wpisz adres e-mail konta Microsoft → kliknij **„Dalej"**
+   - Wpisz hasło → kliknij **„Zaloguj się"**
+   - Jeśli pojawi się pytanie *„Pozostać zalogowanym?"* → kliknij **„Tak"** (ułatwi pracę na zajęciach)
 
-4. Wprowadź adresy e-mail pozostałych członków zespołu (jeden po drugim lub wszystkie na raz, oddzielone przecinkami)
+4. Przy pierwszym logowaniu Azure DevOps zapyta o kilka informacji:
+   - *„What is your name?"* → wpisz imię i nazwisko
+   - *„What do you want to work on?"* → wybierz cokolwiek (np. **„Software development"**)  
+   - Kliknij **„Continue"**
 
-5. Ustaw Access Level: **Basic**
+5. Pojawi się ekran **„Create new organization"** (lub zostaniesz od razu przekierowany do kreatora):
+   - Kliknij **„Continue"** (jeśli wyświetla się jako oddzielny krok)
+   - **Organization name**: wpisz `bim-[nazwazespolu]`  
+     *(np. `bim-kryminal`, `bim-horror`, `bim-romans`, `bim-fantastyka`)*  
+     ⚠️ Nazwa może zawierać tylko litery, cyfry i myślniki. **Bez polskich znaków!**
+   - **We'll host your projects in**: wybierz **West Europe**
+   - Rozwiąż captcha, jeśli się pojawi
+   - Kliknij **„Continue"**
 
-6. Kliknij **„Add"**
+6. Pojawi się kreator nowego projektu — **NIE twórz jeszcze projektu**, zamknij lub pomiń ten ekran (kliknij „X" lub „Skip"). Projekt utworzymy w Kroku 3.
 
-**Wykonuje: każdy zaproszony członek**
+7. Powinieneś znaleźć się na stronie głównej swojej organizacji:  
+   `https://dev.azure.com/bim-[nazwazespolu]`
 
-1. Sprawdź skrzynkę e-mail (i folder SPAM!)
-2. Kliknij link w e-mailu z zaproszeniem
-3. Zaloguj się na swoje konto Microsoft
-4. Potwierdź dołączenie do organizacji
-
-> ✅ **Sprawdzenie**: wszyscy członkowie widoczni na liście Users w ustawieniach organizacji.
+> ✅ **Sprawdzenie**: w prawym górnym rogu widać ikonę konta (inicjały lub awatar) i nazwę organizacji na górze strony.
 
 ---
 
-## Krok 3 – Konfiguracja projektu w Azure DevOps
+### Zadanie 2.3 – Zaproszenie członków zespołu
+
+**Wykonuje: Scrum Master**
+
+1. W lewym dolnym rogu strony kliknij ikonę koła zębatego ⚙️ → **„Organization settings"**  
+   *(Alternatywna ścieżka: `https://dev.azure.com/bim-[nazwazespolu]/_settings/`)*
+
+2. W lewym menu (sekcja **„General"**) kliknij **„Users"**
+
+3. Kliknij niebieski przycisk **„Add users"** (prawy górny róg tabeli)
+
+4. Wypełnij formularz:
+   - **Users**: wpisz adresy e-mail wszystkich członków zespołu  
+     *(możesz wpisywać po jednym i naciskać Enter, lub wkleić kilka naraz oddzielonych przecinkami)*
+   - **Access level**: wybierz **Basic**
+   - **Add to projects**: zostaw puste (projekt dodamy później)
+   - **Azure DevOps Groups**: zostaw domyślne (`Project Contributors`)
+
+5. Kliknij **„Add"**
+
+6. Na ekranie pojawi się potwierdzenie: *„X user(s) added successfully"*  
+   Na adresy e-mail uczestników zostaną wysłane zaproszenia.
+
+---
+
+**Wykonuje: każdy zaproszony członek zespołu**
+
+1. Otwórz skrzynkę e-mail (sprawdź też folder **SPAM / Oferty**)
+
+2. Znajdź wiadomość od `azure@microsoft.com` z tytułem:  
+   *„[Scrum Master imię] has invited you to join Azure DevOps"*
+
+3. Kliknij niebieski przycisk **„Join now"** w treści e-maila
+
+4. Zostaniesz przekierowany do przeglądarki — zaloguj się swoim kontem Microsoft  
+   *(tak samo jak w Zadaniu 2.2, krok 3)*
+
+5. Potwierdź dołączenie klikając **„Continue"**
+
+6. Powinieneś zobaczyć stronę organizacji Scrum Mastera:  
+   `https://dev.azure.com/bim-[nazwazespolu]`
+
+> ✅ **Sprawdzenie (Scrum Master)**: wróć do **Organization Settings → Users** — wszyscy zaproszeni powinni mieć status **„Active"** (nie „Pending"). Jeśli ktoś ma „Pending" — e-mail jeszcze nie otworzył lub trafił do SPAM.
+
+---
+
+## Krok 3 – Tworzenie i konfiguracja projektu
 
 **Czas: 20 minut | Wykonuje: Scrum Master + zespół**
 
 ### Zadanie 3.1 – Tworzenie projektu
 
-1. Wróć do strony głównej organizacji (kliknij logo ADO lub nazwę organizacji)
+1. Przejdź na stronę główną organizacji: `https://dev.azure.com/bim-[nazwazespolu]`
 
-2. Kliknij **„+ New project"** (prawy górny róg)
+2. Kliknij niebieski przycisk **„+ New project"** (prawy górny róg strony)
 
-3. Uzupełnij formularz:
-   - **Project name**: wpisz tytuł roboczy waszej powieści  
-     *(np. „Zbrodnia w Zamku Blum")*
-   - **Description**: gatunek + jedno zdanie o fabule
-   - **Visibility**: **Private**
-   - **Version control**: **Git**
-   - **Work item process**: **Scrum** ← **WAŻNE! Nie zmieniaj!**
+3. Wypełnij formularz:
+
+   | Pole | Wartość |
+   |---|---|
+   | **Project name** | Tytuł roboczy powieści *(np. „Zbrodnia w Zamku Blum")* |
+   | **Description** | Gatunek + 1 zdanie o fabule |
+   | **Visibility** | **Private** ← ważne! |
+   | **Version control** | Git |
+   | **Work item process** | **Scrum** ← **KRYTYCZNE! Nie wybieraj innego!** |
 
 4. Kliknij **„Create"**
+
+5. Azure DevOps przez kilka sekund tworzy projekt, następnie automatycznie otwiera jego stronę główną (Overview → Summary).
+
+6. **Dodaj uczestników do projektu** (poza organizacją to oddzielny krok):
+   - Kliknij **„Project settings"** (lewy dolny róg) → **„Teams"** → kliknij nazwę domyślnego zespołu *(np. „Zbrodnia w Zamku Blum Team")*
+   - Kliknij **„Add"**
+   - Wpisz adresy e-mail (lub wyszukaj po nazwie — pojawią się osoby dodane w kroku 2.3)
+   - Kliknij **„Save"**
+
+> ✅ **Sprawdzenie**: W **Project Settings → Teams → [nazwa zespołu]** widoczni są wszyscy członkowie zespołu.
 
 ---
 
