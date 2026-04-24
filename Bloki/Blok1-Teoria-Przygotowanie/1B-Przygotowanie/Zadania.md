@@ -73,35 +73,40 @@ Wylosuj karteczkę z gatunkiem powieści i uzupełnij:
 
 **Wykonuje: Scrum Master**
 
-1. Otwórz przeglądarkę i przejdź na: **https://dev.azure.com**
+> ⛔ **Ważna uwaga – NIE zakładamy konta Azure!**  
+> Azure DevOps (narzędzie do zarządzania projektem) to **osobna, darmowa usługa** — nie wymaga subskrypcji Azure ani podawania adresu zamieszkania czy danych karty płatniczej.  
+> Jeśli widzisz stronę *„Tworzenie bezpłatnego konta platformy Azure"* z pytaniami o adres lub kartę — **zatrzymaj się i wróć do kroku 1 poniżej**.
 
-2. Na środku strony kliknij niebieski przycisk **„Start free"**.
+1. Otwórz przeglądarkę i wejdź **bezpośrednio** na adres rejestracji Azure DevOps:  
+   **https://aex.dev.azure.com/signup**  
+   *(Ten adres pomija stronę marketingową i trafia od razu do właściwego kreatora.)*
 
-3. Pojawi się ekran logowania Microsoft:
-   - Wpisz adres e-mail konta Microsoft → kliknij **„Dalej"**
+2. Pojawi się ekran logowania Microsoft — **zaloguj się kontem Outlook.com / Hotmail / Live**:
+   - Wpisz adres e-mail → kliknij **„Dalej"**
    - Wpisz hasło → kliknij **„Zaloguj się"**
-   - Jeśli pojawi się pytanie *„Pozostać zalogowanym?"* → kliknij **„Tak"** (ułatwi pracę na zajęciach)
+   - Jeśli pojawi się pytanie *„Pozostać zalogowanym?"* → kliknij **„Tak"**
 
-4. Przy pierwszym logowaniu Azure DevOps zapyta o kilka informacji:
+   > ⚠️ Jeśli po zalogowaniu nadal widzisz ekran z pytaniem o adres zamieszkania lub kartę płatniczą — zamknij tę kartę przeglądarki i wróć do linka z kroku 1. Możliwe, że przeglądarka zapamiętała poprzednią sesję i przekierowała na złą stronę. Spróbuj otworzyć okno prywatne (Ctrl+Shift+N).
+
+3. Przy pierwszym logowaniu Azure DevOps wyświetli pytania powitalne — **nie ma tu pól adresowych**:
    - *„What is your name?"* → wpisz imię i nazwisko
-   - *„What do you want to work on?"* → wybierz cokolwiek (np. **„Software development"**)  
+   - *„What do you want to work on?"* → wybierz dowolnie (np. **„Software development"**)
    - Kliknij **„Continue"**
 
-5. Pojawi się ekran **„Create new organization"** (lub zostaniesz od razu przekierowany do kreatora):
-   - Kliknij **„Continue"** (jeśli wyświetla się jako oddzielny krok)
+4. Pojawi się ekran **„Create new organization"**:
    - **Organization name**: wpisz `bim-[nazwazespolu]`  
      *(np. `bim-kryminal`, `bim-horror`, `bim-romans`, `bim-fantastyka`)*  
-     ⚠️ Nazwa może zawierać tylko litery, cyfry i myślniki. **Bez polskich znaków!**
+     ⚠️ Tylko litery, cyfry i myślniki — **bez polskich znaków!**
    - **We'll host your projects in**: wybierz **West Europe**
    - Rozwiąż captcha, jeśli się pojawi
    - Kliknij **„Continue"**
 
-6. Pojawi się kreator nowego projektu — **NIE twórz jeszcze projektu**, zamknij lub pomiń ten ekran (kliknij „X" lub „Skip"). Projekt utworzymy w Kroku 3.
+5. Pojawi się kreator nowego projektu — **NIE twórz jeszcze projektu**, zamknij lub pomiń (kliknij „X" lub „Skip"). Projekt utworzymy w Kroku 3.
 
-7. Powinieneś znaleźć się na stronie głównej swojej organizacji:  
+6. Powinieneś znaleźć się na stronie głównej swojej organizacji:  
    `https://dev.azure.com/bim-[nazwazespolu]`
 
-> ✅ **Sprawdzenie**: w prawym górnym rogu widać ikonę konta (inicjały lub awatar) i nazwę organizacji na górze strony.
+> ✅ **Sprawdzenie**: w prawym górnym rogu widać ikonę konta (inicjały lub awatar) i nazwę organizacji na górze strony. Nie było żadnych pytań o adres ani kartę płatniczą.
 
 ---
 
