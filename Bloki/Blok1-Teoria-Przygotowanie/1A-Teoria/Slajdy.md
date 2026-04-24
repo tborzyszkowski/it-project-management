@@ -117,14 +117,14 @@ Kwiecień 2026
 
 ## 4 wartości
 
-| Bardziej cenimy | Niż |
+| ← Bardziej cenimy | Niż → |
 |---|---|
 | **Ludzi i interakcje** | Procesy i narzędzia |
 | **Działające oprogramowanie** | Obszerną dokumentację |
 | **Współpracę z klientem** | Negocjowanie umów |
 | **Reagowanie na zmiany** | Podążanie za planem |
 
-> Cenimy rzeczy po prawej, ale **bardziej** te po lewej.
+> Cenimy rzeczy po prawej *(„Niż")*, ale **bardziej** te po lewej *(„Bardziej cenimy")*.
 
 ---
 

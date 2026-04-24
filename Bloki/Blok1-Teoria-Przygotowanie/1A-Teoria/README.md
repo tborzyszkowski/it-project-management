@@ -65,12 +65,14 @@ Fazy sekwencyjne: **Wymagania → Projektowanie → Implementacja → Testowanie
 
 **Manifest Agile (2001) – 4 wartości:**
 
-1. **Ludzie i interakcje** ponad procesy i narzędzia
-2. **Działające oprogramowanie** ponad obszerną dokumentację
-3. **Współpraca z klientem** ponad negocjowanie umów
-4. **Reagowanie na zmiany** ponad podążanie za planem
+| Bardziej cenimy *(lewa strona)* | Niż *(prawa strona)* |
+|---|---|
+| **Ludzie i interakcje** | Procesy i narzędzia |
+| **Działające oprogramowanie** | Obszerna dokumentacja |
+| **Współpraca z klientem** | Negocjowanie umów |
+| **Reagowanie na zmiany** | Podążanie za planem |
 
-> „Cenimy rzeczy po prawej stronie, ale bardziej cenimy te po lewej."
+> „Cenimy rzeczy po prawej stronie *(procesy, dokumentację, umowy, plan)*, ale bardziej cenimy te po lewej *(ludzi, oprogramowanie, współpracę, zmiany)*."
 
 **Kluczowe pojęcia:**
 - **Iteracja** – krótki cykl pracy zakończony działającym produktem,
