@@ -38,7 +38,7 @@ style: |
 | Czas | Aktywność |
 |---|---|
 | 5 min | Podział na zespoły + losowanie gatunków |
-| 15 min | Zakładanie kont Azure DevOps |
+| 15 min | Zakładanie kont Jira |
 | 20 min | Konfiguracja projektu i backlogu |
 | 20 min | Sprint Planning – PBI + Story Points |
 
@@ -62,94 +62,93 @@ style: |
 
 ---
 
-# Krok 2 – Azure DevOps: Rejestracja
+# Krok 2 – Jira: Rejestracja konta
 
-## Scrum Master wykonuje, pozostali obserwują
+## Każdy uczestnik samodzielnie (Scrum Master zaczyna)
 
-1. Wejdź na: **https://dev.azure.com**
-2. Kliknij **„Start free"**
-3. Zaloguj się kontem Microsoft (lub załóż Outlook.com)
-4. Wpisz nazwę organizacji: `bim-[waszazespolu]`
-5. Wybierz region: **West Europe**
-6. Kliknij **„Continue"**
+1. Wejdź na: **https://www.atlassian.com/software/jira/free**
+2. Kliknij **„Get it free"**
+3. Wpisz dowolny e-mail → **„Agree – Sign Up"**
+4. Wpisz 6-cyfrowy **kod z e-maila** → ustaw hasło → wpisz imię
+5. *(Scrum Master)* Wpisz nazwę site: `bim-[waszazespolu]`
+6. Wybierz **„Software development"** → **„Next"**
 
 ---
 
-# Krok 2 – Zapraszanie członków
+# Krok 2 – Jira: Zapraszanie członków
 
-## Settings → Users → Add users
+## Project settings → Access → Add people
 
-1. Kliknij ⚙️ → **Organization Settings**
-2. W menu: **Users** → **Add users**
+1. Lewe menu: **Project settings** → **Access**
+2. Kliknij **„Add people"**
 3. Wpisz e-maile wszystkich z zespołu
-4. Access Level: **Basic**
-5. Kliknij **Add**
+4. Rola: **Member**
+5. Kliknij **„Send invites"**
 
 ## Każdy zaproszony:
-- Sprawdź e-mail (i **SPAM**!)
-- Kliknij link z zaproszenia
-- Zaloguj się i potwierdź
+- Sprawdź e-mail od `no-reply@atlassian.com` (i **SPAM**!)
+- Kliknij **„Join project"**
+- Utwórz konto Atlassian lub zaloguj się
 
 ---
 
-# Krok 3 – Tworzenie projektu
+# Krok 3 – Jira: Tworzenie projektu
 
-## + New Project
+## Get it free → Scrum → Team-managed
 
 | Pole | Wartość |
 |---|---|
+| Site name | `bim-[waszazespolu]` |
+| Template | **Scrum** ⬅️ WAŻNE! |
+| Project type | **Team-managed** |
 | Project name | *Tytuł waszej powieści* |
-| Visibility | **Private** |
-| Version control | **Git** |
-| Work item process | **Scrum** ⬅️ WAŻNE! |
 
-> Kliknij **„Create"**
+> Kliknij **„Create project"**
 
 ---
 
-# Krok 3 – Konfiguracja sprintu
+# Krok 3 – Jira: Konfiguracja sprintu
 
-## Boards → Backlogs → ⚙️ Team Configuration → Iterations
+## Backlog → Create sprint → Edit sprint
 
-1. Kliknij **„+ New iteration"**
-2. Nazwa: **Sprint 1**
-3. Daty: **dzisiejszy dzień**
-4. Kliknij **Save and close**
-5. Zaznacz Sprint 1 → **Save**
+1. Lewe menu: **Backlog**
+2. Kliknij **„Create sprint"**
+3. Kliknij **„···"** → **„Edit sprint"**
+4. Nazwa: **Sprint 1**, daty: **dzisiejszy dzień**
+5. Kliknij **„Update"**
 
-✅ W Backlogs widoczna zakładka „Sprint 1"
+✅ W Backlogu widoczna sekcja „Sprint 1"
 
 ---
 
-# Hierarchia backlogu w ADO (Scrum)
+# Hierarchia elementów w Jira Scrum
 
 ```
-Epic  (żółty)
- └── Feature  (fioletowy)
-      └── Product Backlog Item  (niebieski) ← szacujemy!
-           ├── Task  (żółty jasny)
-           └── Bug  (czerwony)
+Epic  (fioletowy)
+ └── Story  (zielony) ← szacujemy! (= PBI)
+      └── Sub-task  (niebieski)
+ └── Bug  (czerwony)
 ```
 
 | Typ | Przykład |
 |---|---|
 | Epic | „Napisanie powieści" |
-| Feature | „Rozdział 1: Odkrycie zbrodni" |
-| PBI | „Opis miejsca zbrodni (min. 200 słów)" |
-| Task | „Wygeneruj tekst AI, przeredaguj" |
+| Story | „Opis miejsca zbrodni (min. 200 słów)" |
+| Sub-task | „Wygeneruj tekst AI, przeredaguj" |
+| Bug | „Imię bohatera jest niespójne" |
 
 ---
 
-# Krok 3 – Utwórz Epic i Feature
+# Krok 3 – Utwórz Epici i Stories
 
-## Product Owner tworzy strukturę w Backlogs
+## Product Owner tworzy strukturę w Jira
 
-1. **+ New Work Item** → **Epic**
-   - Tytuł: `Napisanie powieści [tytuł]`
-
-2. Rozwiń Epica → **+ Add Feature**:
+1. **Roadmap** → **„+ Create epic"**:
+   - `Napisanie powieści [tytuł]`
    - `Część I – Wprowadzenie i postacie`
    - `Część II – Akcja i punkt zwrotny`
+
+2. **Backlog** → **„+ Create issue"** → typ: **Story**
 
 ---
 
@@ -193,7 +192,7 @@ Minimum **6 PBI** w backlogu:
 2. Każdy Developer **w tajemnicy** zapisuje ocenę
 3. Na sygnał SM – **wszyscy jednocześnie** pokazują kartki
 4. Rozbieżność? → krótka dyskusja (max 2 min)
-5. SM wpisuje uzgodnioną wartość do ADO
+5. SM wpisuje uzgodnioną wartość w Jira (pole „Story points")
 
 > ✋ Dlaczego tajnie? Bo unikamy **anchoring bias** (wpływu na siebie nawzajem)
 
@@ -201,22 +200,22 @@ Minimum **6 PBI** w backlogu:
 
 # Krok 4 – Wypełnianie Sprint Backlog
 
-## Scrum Master + PO przeciągają PBI do Sprint 1
+## Scrum Master + PO przeciągają Stories do Sprint 1
 
-1. Boards → Backlogs → zakładka **Sprint 1**
-2. Przeciągnij PBI z Backlogu do Sprint 1
+1. Backlog → sekcja **Sprint 1**
+2. Przeciągnij Story z Backlogu do Sprint 1
 3. Zacznij od **najwyższych priorytetów**
-4. Dodawaj PBI aż suma SP = **12–15**
+4. Dodawaj Stories aż suma SP = **12–15**
 
-Dla każdego PBI w sprincie:
-- **+ Add Task** → wpisz czynność
+Dla każdej Story w sprincie:
+- Otwórz Story → **„Create child issue"** → Sub-task
 - Przypisz do konkretnego Developera
 
 ---
 
 # Definition of Done – musisz zdefiniować PRZED sprintem!
 
-## Overview → Wiki → „Definition of Done"
+## Pages → „Definition of Done"
 
 ```markdown
 ## Dla rozdziału / sceny:
@@ -224,7 +223,7 @@ Dla każdego PBI w sprincie:
 - [ ] Imiona spójne w całym tekście
 - [ ] Styl spójny z gatunkiem
 - [ ] Tekst wklejony do dokumentu
-- [ ] PBI = Done w ADO
+- [ ] Story = Done w Jira
 - [ ] Review przez QA
 ```
 
@@ -232,7 +231,7 @@ Dla każdego PBI w sprincie:
 
 # Lista kontrolna – czy jesteście gotowi na Sprint?
 
-- [ ] Organizacja ADO założona, wszyscy mają dostęp
+- [ ] Konto Jira (site) założone, wszyscy mają dostęp
 - [ ] Projekt Scrum z właściwą nazwą
 - [ ] Sprint 1 skonfigurowany z datami
 - [ ] Min. 6 PBI w backlogu z opisami
@@ -245,14 +244,14 @@ Dla każdego PBI w sprincie:
 
 # Gotowi? START SPRINT! 🚀
 
-## Przejdź do: **Boards → Sprint 1 Board**
+## Przejdź do: **Board** (lewe menu)
 
-Kolumny: `To Do | In Progress | Review | Done`
+Kolumny: `To Do | In Progress | Done`
 
 Każdy Developer:
-1. Bierze swój Task → przeciąga do **In Progress**
+1. Bierze swój Sub-task → przeciąga do **In Progress**
 2. Pisze prompt dla AI → generuje tekst → redaguje
-3. Po ukończeniu → przeciąga do **Review**
-4. QA sprawdza DoD → **Done** lub wraca z komentarzem
+3. Po ukończeniu → przeciąga do **Done**
+4. QA sprawdza DoD → Story → **Done** lub wraca z komentarzem
 
 > Następnie: [Blok 2A – Sprint](../../Blok2-Sprint-Podsumowanie/2A-Sprint/Slajdy.md)

@@ -37,76 +37,64 @@ Wylosuj karteczkę z gatunkiem powieści i uzupełnij:
 
 ---
 
-## Krok 2 – Zakładanie kont Azure DevOps
+## Krok 2 – Zakładanie kont Jira
 
-**Czas: 15 minut | Wykonuje: Scrum Master (wszyscy obserwują i powtarzają na swoich komputerach)**
+**Czas: 15 minut | Wykonuje: każdy uczestnik samodzielnie, Scrum Master jako pierwszy**
 
-> ⚠️ **Przed startem**: każdy uczestnik potrzebuje adresu e-mail dostępnego na swoim komputerze (do odebrania zaproszenia). Konto Microsoft zakłada **Scrum Master** — reszta dołącza przez zaproszenie.
-
----
-
-### Zadanie 2.1 – Założenie konta Microsoft (jeśli nie masz)
-
-> ✅ Masz już konto Outlook.com / Hotmail / Live / konto Microsoft 365 (służbowe lub szkolne)? **Pomiń ten krok i przejdź do Zadania 2.2.**
-
-1. Otwórz przeglądarkę i wejdź na: **https://signup.live.com**
-
-2. W polu **„Utwórz adres e-mail"** wpisz wybraną nazwę użytkownika, np. `jan.kowalski.bim`  
-   → domena: `@outlook.com`  
-   → kliknij **„Dalej"**
-
-3. Ustaw hasło (min. 8 znaków, wielka litera + cyfra) → kliknij **„Dalej"**
-
-4. Podaj imię i nazwisko → kliknij **„Dalej"**
-
-5. Wybierz kraj **(Polska)** i datę urodzenia → kliknij **„Dalej"**
-
-6. Rozwiąż captcha (puzzle graficzne) → kliknij **„Dalej"**
-
-7. Konto jest gotowe. Zapamiętaj lub zapisz:
-   - **Login**: `jan.kowalski.bim@outlook.com`
-   - **Hasło**: *(zapisz w bezpiecznym miejscu)*
+> ✅ **Dlaczego Jira?**  
+> Jira (plan Free) nie wymaga subskrypcji, karty płatniczej ani konta firmowego. Wystarczy dowolny adres e-mail. Bezpłatny plan obejmuje do **10 użytkowników** — w zupełności wystarczy na zajęcia.
 
 ---
 
-### Zadanie 2.2 – Logowanie do Azure DevOps i tworzenie organizacji
+### Zadanie 2.1 – Rejestracja konta Atlassian
 
-**Wykonuje: Scrum Master**
+> ✅ Masz już konto Atlassian (Jira, Trello, Confluence)? **Pomiń ten krok i przejdź do Zadania 2.2.**
 
-> ⛔ **Ważna uwaga – NIE zakładamy konta Azure!**  
-> Azure DevOps (narzędzie do zarządzania projektem) to **osobna, darmowa usługa** — nie wymaga subskrypcji Azure ani podawania adresu zamieszkania czy danych karty płatniczej.  
-> Jeśli widzisz stronę *„Tworzenie bezpłatnego konta platformy Azure"* z pytaniami o adres lub kartę — **zatrzymaj się i wróć do kroku 1 poniżej**.
+**Wykonuje: każdy uczestnik (samodzielnie, zaczynając od Scrum Mastera)**
 
-1. Otwórz przeglądarkę i wejdź **bezpośrednio** na adres rejestracji Azure DevOps:  
-   **https://aex.dev.azure.com/signup**  
-   *(Ten adres pomija stronę marketingową i trafia od razu do właściwego kreatora.)*
+1. Otwórz przeglądarkę i wejdź na: **https://www.atlassian.com/software/jira/free**
 
-2. Pojawi się ekran logowania Microsoft — **zaloguj się kontem Outlook.com / Hotmail / Live**:
-   - Wpisz adres e-mail → kliknij **„Dalej"**
-   - Wpisz hasło → kliknij **„Zaloguj się"**
-   - Jeśli pojawi się pytanie *„Pozostać zalogowanym?"* → kliknij **„Tak"**
+2. Kliknij niebieski przycisk **„Get it free"**
 
-   > ⚠️ Jeśli po zalogowaniu nadal widzisz ekran z pytaniem o adres zamieszkania lub kartę płatniczą — zamknij tę kartę przeglądarki i wróć do linka z kroku 1. Możliwe, że przeglądarka zapamiętała poprzednią sesję i przekierowała na złą stronę. Spróbuj otworzyć okno prywatne (Ctrl+Shift+N).
+3. Wpisz swój adres e-mail → kliknij **„Agree – Sign Up"**  
+   *(Dowolny e-mail — nie wymaga konta Microsoft ani Google, nie pyta o adres zamieszkania)*
 
-3. Przy pierwszym logowaniu Azure DevOps wyświetli pytania powitalne — **nie ma tu pól adresowych**:
-   - *„What is your name?"* → wpisz imię i nazwisko
-   - *„What do you want to work on?"* → wybierz dowolnie (np. **„Software development"**)
-   - Kliknij **„Continue"**
+4. Sprawdź skrzynkę e-mail — Atlassian wysyła **6-cyfrowy kod weryfikacyjny**  
+   *(Sprawdź też folder SPAM, jeśli nie ma po 2 minutach)*
 
-4. Pojawi się ekran **„Create new organization"**:
-   - **Organization name**: wpisz `bim-[nazwazespolu]`  
+5. Wpisz kod na stronie → kliknij **„Verify"**
+
+6. Ustaw hasło (min. 8 znaków) → kliknij **„Continue"**
+
+7. Wpisz imię i nazwisko → kliknij **„Continue"**
+
+> ✅ Konto Atlassian gotowe. Zapamiętaj e-mail i hasło — będą potrzebne przy każdym logowaniu.
+
+---
+
+### Zadanie 2.2 – Tworzenie site i projektu
+
+**Wykonuje: Scrum Master** *(pozostali dołączą przez zaproszenie w Zadaniu 2.3)*
+
+1. Po rejestracji Jira pyta o nazwę **site** (Twoja przestrzeń robocza):
+   - Wpisz: `bim-[nazwazespolu]`  
      *(np. `bim-kryminal`, `bim-horror`, `bim-romans`, `bim-fantastyka`)*  
      ⚠️ Tylko litery, cyfry i myślniki — **bez polskich znaków!**
-   - **We'll host your projects in**: wybierz **West Europe**
-   - Rozwiąż captcha, jeśli się pojawi
+   - Adres Twojej Jiry będzie: `bim-[nazwazespolu].atlassian.net`
    - Kliknij **„Continue"**
 
-5. Pojawi się kreator nowego projektu — **NIE twórz jeszcze projektu**, zamknij lub pomiń (kliknij „X" lub „Skip"). Projekt utworzymy w Kroku 3.
+2. *„What kind of work does your team do?"* → wybierz **„Software development"** → **„Next"**
 
-6. Powinieneś znaleźć się na stronie głównej swojej organizacji:  
-   `https://dev.azure.com/bim-[nazwazespolu]`
+3. Pojawi się ekran wyboru szablonu projektu:
+   - Kliknij kafelek **„Scrum"** ← **KRYTYCZNE! Nie wybieraj Kanban ani Basic!**
+   - Kliknij **„Select"**
+   - Typ projektu: wybierz **„Team-managed project"** *(prostszy dla początkujących)*
+   - **Project name**: tytuł roboczy waszej powieści *(np. „Zbrodnia w Zamku Blum")*
+   - Kliknij **„Create project"**
 
-> ✅ **Sprawdzenie**: w prawym górnym rogu widać ikonę konta (inicjały lub awatar) i nazwę organizacji na górze strony. Nie było żadnych pytań o adres ani kartę płatniczą.
+4. Jira tworzy projekt i otwiera widok **Backlog** — to jest Twój pulpit pracy.
+
+> ✅ **Sprawdzenie**: widzisz stronę projektu z pustym Backlogiem i lewym menu z opcjami: Backlog, Board, Reports…
 
 ---
 
@@ -114,138 +102,119 @@ Wylosuj karteczkę z gatunkiem powieści i uzupełnij:
 
 **Wykonuje: Scrum Master**
 
-1. W lewym dolnym rogu strony kliknij ikonę koła zębatego ⚙️ → **„Organization settings"**  
-   *(Alternatywna ścieżka: `https://dev.azure.com/bim-[nazwazespolu]/_settings/`)*
+1. W lewym menu projektu (na samym dole) kliknij **„Project settings"**
 
-2. W lewym menu (sekcja **„General"**) kliknij **„Users"**
+2. Wybierz **„Access"** (lub **„People"** w zależności od wersji Jiry)
 
-3. Kliknij niebieski przycisk **„Add users"** (prawy górny róg tabeli)
+3. Kliknij **„Add people"** (prawy górny róg)
 
-4. Wypełnij formularz:
-   - **Users**: wpisz adresy e-mail wszystkich członków zespołu  
-     *(możesz wpisywać po jednym i naciskać Enter, lub wkleić kilka naraz oddzielonych przecinkami)*
-   - **Access level**: wybierz **Basic**
-   - **Add to projects**: zostaw puste (projekt dodamy później)
-   - **Azure DevOps Groups**: zostaw domyślne (`Project Contributors`)
+4. Wpisz adresy e-mail pozostałych członków zespołu  
+   *(możesz wpisywać po jednym lub kilka oddzielonych przecinkami)*
 
-5. Kliknij **„Add"**
+5. Rola: zostaw **„Member"**
 
-6. Na ekranie pojawi się potwierdzenie: *„X user(s) added successfully"*  
-   Na adresy e-mail uczestników zostaną wysłane zaproszenia.
+6. Kliknij **„Send invites"**
 
 ---
 
 **Wykonuje: każdy zaproszony członek zespołu**
 
-1. Otwórz skrzynkę e-mail (sprawdź też folder **SPAM / Oferty**)
+1. Sprawdź skrzynkę e-mail (i folder **SPAM / Oferty**)
 
-2. Znajdź wiadomość od `azure@microsoft.com` z tytułem:  
-   *„[Scrum Master imię] has invited you to join Azure DevOps"*
+2. Znajdź wiadomość od `no-reply@atlassian.com` z tytułem zawierającym *„invited you"*
 
-3. Kliknij niebieski przycisk **„Join now"** w treści e-maila
+3. Kliknij przycisk **„Join project"** w treści e-maila
 
-4. Zostaniesz przekierowany do przeglądarki — zaloguj się swoim kontem Microsoft  
-   *(tak samo jak w Zadaniu 2.2, krok 3)*
+4. Jeśli nie masz jeszcze konta Atlassian — zostaniesz przeprowadzony przez rejestrację (Zadanie 2.1)  
+   Jeśli masz — zaloguj się i potwierdź dołączenie
 
-5. Potwierdź dołączenie klikając **„Continue"**
+5. Powinieneś zobaczyć projekt Scrum Mastera z Backlogiem
 
-6. Powinieneś zobaczyć stronę organizacji Scrum Mastera:  
-   `https://dev.azure.com/bim-[nazwazespolu]`
-
-> ✅ **Sprawdzenie (Scrum Master)**: wróć do **Organization Settings → Users** — wszyscy zaproszeni powinni mieć status **„Active"** (nie „Pending"). Jeśli ktoś ma „Pending" — e-mail jeszcze nie otworzył lub trafił do SPAM.
+> ✅ **Sprawdzenie (Scrum Master)**: W **Project settings → Access** widoczni są wszyscy członkowie ze statusem aktywnym.
 
 ---
 
-## Krok 3 – Tworzenie i konfiguracja projektu
+## Krok 3 – Konfiguracja projektu w Jira
 
 **Czas: 20 minut | Wykonuje: Scrum Master + zespół**
 
-### Zadanie 3.1 – Tworzenie projektu
+### Zadanie 3.1 – Konfiguracja sprintu
 
-1. Przejdź na stronę główną organizacji: `https://dev.azure.com/bim-[nazwazespolu]`
+1. W lewym menu kliknij **„Backlog"**
 
-2. Kliknij niebieski przycisk **„+ New project"** (prawy górny róg strony)
+2. W widoku Backlog kliknij przycisk **„Create sprint"**  
+   *(Pojawi się nowa sekcja „Sprint 1" u góry Backlogu)*
 
-3. Wypełnij formularz:
+3. Kliknij **„···"** (trzy kropki) przy nagłówku sprintu → **„Edit sprint"**:
+   - **Sprint name**: `Sprint 1`
+   - **Start date**: dzisiejsza data
+   - **End date**: dzisiejsza data *(sprint = 1 dzień zajęć)*
+   - Kliknij **„Update"**
 
-   | Pole | Wartość |
-   |---|---|
-   | **Project name** | Tytuł roboczy powieści *(np. „Zbrodnia w Zamku Blum")* |
-   | **Description** | Gatunek + 1 zdanie o fabule |
-   | **Visibility** | **Private** ← ważne! |
-   | **Version control** | Git |
-   | **Work item process** | **Scrum** ← **KRYTYCZNE! Nie wybieraj innego!** |
-
-4. Kliknij **„Create"**
-
-5. Azure DevOps przez kilka sekund tworzy projekt, następnie automatycznie otwiera jego stronę główną (Overview → Summary).
-
-6. **Dodaj uczestników do projektu** (poza organizacją to oddzielny krok):
-   - Kliknij **„Project settings"** (lewy dolny róg) → **„Teams"** → kliknij nazwę domyślnego zespołu *(np. „Zbrodnia w Zamku Blum Team")*
-   - Kliknij **„Add"**
-   - Wpisz adresy e-mail (lub wyszukaj po nazwie — pojawią się osoby dodane w kroku 2.3)
-   - Kliknij **„Save"**
-
-> ✅ **Sprawdzenie**: W **Project Settings → Teams → [nazwa zespołu]** widoczni są wszyscy członkowie zespołu.
+> ✅ **Sprawdzenie**: W Backlogu widoczna sekcja **„Sprint 1"** z datami oraz sekcja **„Backlog"** poniżej.
 
 ---
 
-### Zadanie 3.2 – Konfiguracja sprintu
+### Zadanie 3.2 – Poznaj hierarchię elementów w Jira Scrum
 
-1. W lewym menu kliknij **„Boards"** → **„Backlogs"**
+Zanim zaczniesz tworzyć elementy, zapamiętaj hierarchię w szablonie Scrum w Jira:
 
-2. Kliknij ikonę koła zębatego ⚙️ przy nazwie zespołu (prawy górny róg widoku Boards)
+```
+Epic  (duży obszar produktu)
+ └── Story  (= PBI – główna jednostka, szacowana w Story Points)
+      └── Sub-task  (konkretne działania)
+ └── Bug  (błąd / niespójność – na tym samym poziomie co Story)
+```
 
-3. Wybierz **„Team configuration"**
+| Typ | Kolor | Odpowiednik Scrum | Użycie |
+|---|---|---|---|
+| **Epic** | Fioletowy | Epic | „Napisanie powieści" |
+| **Story** | Zielony | PBI (Product Backlog Item) | Konkretne wymaganie, szacowane w SP |
+| **Bug** | Czerwony | Bug | Błąd / niespójność do poprawy |
+| **Sub-task** | Niebieski | Task | Działania techniczne w ramach Story |
 
-4. Przejdź do zakładki **„Iterations"**
-
-5. Kliknij **„+ New iteration"**:
-   - Nazwa: **Sprint 1**
-   - Data początkowa: *dzisiejsza data*
-   - Data końcowa: *dzisiejsza data* (sprint = 1 dzień zajęć)
-   - Kliknij **„Save and close"**
-
-6. Zaznacz checkbox przy **Sprint 1** → kliknij **„Save"**
-
-> ✅ **Sprawdzenie**: W widoku Backlogs widoczna jest zakładka „Sprint 1".
+> ℹ️ W Jira Free szablon Scrum nie ma osobnego poziomu „Feature" — **Epic** pełni rolę grupującą dla Stories.
 
 ---
 
-### Zadanie 3.3 – Poznaj hierarchię backlogu
-
-Zanim zaczniesz tworzyć elementy, zapamiętaj hierarchię w szablonie Scrum:
-
-```
-Epic
- └── Feature
-      └── Product Backlog Item (PBI)  ← główna jednostka
-           └── Task                   ← konkretne działania
-           └── Bug                    ← defekty
-```
-
-| Typ | Kolor w ADO | Użycie |
-|---|---|---|
-| Epic | Żółty | „Napisanie powieści" |
-| Feature | Fioletowy | „Rozdział 1", „Profil postaci" |
-| **PBI** | Niebieski | Konkretne wymagania, szacowane w SP |
-| Task | Żółty jasny | Działania techniczne w ramach PBI |
-| Bug | Czerwony | Błędy do naprawy |
-
-### Zadanie 3.4 – Utwórz Epic i Feature
+### Zadanie 3.3 – Utwórz Epici
 
 **Wykonuje: Product Owner**
 
-1. W widoku **Boards → Backlogs** upewnij się, że jesteś w widoku „Backlog" (nie Sprint 1)
+1. W lewym menu kliknij **„Roadmap"** (lub **„Timeline"** w zależności od wersji Jiry)
 
-2. Kliknij **„+ New Work Item"** → wybierz **Epic**:
-   - Tytuł: `Napisanie powieści [tytuł]`
-   - Kliknij **„Save"**
-
-3. Rozwiń Epica i kliknij **„+ Add Feature"**:
+2. Kliknij **„+ Create epic"** (lub przycisk **„+ Create"** w górnym menu → typ: **Epic**):
+   - `Napisanie powieści – [tytuł]`
    - `Część I – Wprowadzenie i postacie`
    - `Część II – Akcja i punkt zwrotny`
    - `Część III – Zakończenie`
+
+3. Kliknij **„Save"** lub **„Create"** po każdym Epicu
+
+> ✅ **Sprawdzenie**: W widoku Roadmap widoczne są Epici jako poziome belki lub lista.
+
+---
+
+### Zadanie 3.4 – Utwórz pierwsze Stories w Backlogu
+
+**Wykonuje: Product Owner**
+
+1. W lewym menu kliknij **„Backlog"**
+
+2. W sekcji „Backlog" (na dole widoku) kliknij **„+ Create issue"**
+
+3. Upewnij się, że wybrany typ to **„Story"**
+
+4. Wpisz tytuł Story → zatwierdź Enter lub kliknij **„Create"**
+
+5. Otwórz Story (kliknij jej tytuł) i uzupełnij:
+   - **Description**: treść wymagania + kryteria akceptacji
+   - **Epic Link**: przypisz do odpowiedniego Epica *(prawy panel → pole „Epic Link")*
+   - *(Story Points uzupełnisz w Kroku 4 – Sprint Planning)*
+
+6. Powtórz dla kolejnych Stories
+
+> ✅ **Sprawdzenie**: W sekcji **„Backlog"** widoczna lista Stories.
 
 ---
 
@@ -331,17 +300,17 @@ Dla każdego gatunku powieści utwórz minimum **6 PBI**. Poniżej przykłady dl
 
 ---
 
-### Zadanie 4.2 – Tworzenie PBI w ADO
+### Zadanie 4.2 – Tworzenie Stories w Jira
 
-**Wykonuje: Product Owner** (w ADO, widok Boards → Backlogs)
+**Wykonuje: Product Owner** (w Jira, widok Backlog)
 
-Dla każdego PBI z listy powyżej:
+Dla każdej Story z listy powyżej:
 
-1. Kliknij **„+ New Work Item"** → **„Product Backlog Item"**
-2. Wpisz **tytuł** PBI
-3. W opisie dodaj **kryteria akceptacji** (pole „Acceptance Criteria" w ADO)
-4. Zapisz PBI (przycisk „Save")
-5. Ustaw **kolejność** PBI przez przeciąganie (priorytet = kolejność od góry)
+1. W widoku **Backlog** kliknij **„+ Create issue"** → typ: **„Story"**
+2. Wpisz **tytuł** Story
+3. Otwórz Story i w polu **„Description"** dodaj treść wymagania i kryteria akceptacji
+4. Kliknij **„Save"**
+5. Ustaw **kolejność** Stories przez przeciąganie w Backlogu (priorytet = kolejność od góry)
 
 ---
 
@@ -365,7 +334,7 @@ Dla każdego PBI z listy powyżej:
 2. Każdy Developer **w tajemnicy** zapisuje swoją ocenę (1/2/3/5/8) na kartce
 3. Na sygnał SM – wszyscy jednocześnie pokazują kartki
 4. Przy rozbieżności – krótka dyskusja (max 2 min), nowe głosowanie
-5. Scrum Master wpisuje uzgodnioną wartość do pola **„Story Points"** w ADO
+5. Scrum Master wpisuje uzgodnioną wartość w Jira: otwórz Story → prawy panel → pole **„Story points"**
 
 ---
 
@@ -373,18 +342,17 @@ Dla każdego PBI z listy powyżej:
 
 **Prowadzi: Scrum Master + PO**
 
-1. W widoku **Boards → Backlogs** przejdź na zakładkę **„Sprint 1"**
+1. W widoku **Backlog** przeciągnij Story z sekcji „Backlog" do sekcji **„Sprint 1"**  
+   *(lub kliknij Story prawym przyciskiem → „Move to sprint" → Sprint 1)*
 
-2. Przeciągnij PBI z Backlogu do Sprint 1 (lub kliknij prawym przyciskiem → „Move to Sprint 1")
+2. Zacznij od najwyżej priorytetowych Stories
 
-3. Zacznij od najwyżej priorytetowych PBI
+3. Dodawaj Stories dopóki suma Story Points ≤ **12–15 SP**
 
-4. Dodawaj PBI dopóki suma Story Points ≤ **12–15 SP**
-
-5. Dla każdego PBI w Sprint 1 dodaj przynajmniej jeden **Task**:
-   - Kliknij PBI → kliknij „+ Add Task"
+4. Dla każdej Story w Sprint 1 dodaj przynajmniej jeden **Sub-task**:
+   - Otwórz Story → w sekcji „Child issues" kliknij **„Create child issue"** → typ: **Sub-task**
    - Przykład: `"Wygeneruj tekst z AI, przeredaguj do min. 300 słów"`
-   - Przypisz Task do konkretnego Developera
+   - Przypisz Sub-task do konkretnego Developera
 
 ---
 
@@ -392,12 +360,14 @@ Dla każdego PBI z listy powyżej:
 
 **Prowadzi: Scrum Master** (wszyscy ustalają razem)
 
-Odpiszcie uzgodnione DoD w ADO:
+Zapiszcie uzgodnione DoD w Jira:
 
-1. Przejdź do **Overview → Wiki**
-2. Kliknij **„Create Wiki"** (lub „Add page")
-3. Utwórz stronę `Definition of Done`
-4. Wpisz uzgodnione kryteria (minimum 3):
+1. W lewym menu projektu kliknij **„Pages"** (lub **„+ More"** → „Pages")
+2. Kliknij **„Create page"**
+3. Tytuł strony: `Definition of Done`
+4. Wpisz uzgodnione kryteria i kliknij **„Publish"**
+
+   > ℹ️ Jeśli opcja Pages nie jest widoczna — utwórz Story o tytule `[DoD] Definition of Done` i wpisz kryteria w polu Description.
 
 ```markdown
 # Definition of Done – Sprint 1
@@ -407,7 +377,7 @@ Odpiszcie uzgodnione DoD w ADO:
 - [ ] Imiona postaci są spójne w całym tekście
 - [ ] Styl narracji jest spójny z gatunkiem
 - [ ] Tekst wklejony do wspólnego dokumentu
-- [ ] PBI zaktualizowane w ADO (status = Done)
+- [ ] Story zaktualizowana w Jira (status = Done)
 - [ ] Review przeprowadzone przez QA (przynajmniej 1 osoba)
 ```
 
@@ -417,7 +387,7 @@ Odpiszcie uzgodnione DoD w ADO:
 
 Po zakończeniu Sprint Planning sprawdź listę kontrolną:
 
-- [ ] Organizacja ADO założona, wszyscy mają dostęp
+- [ ] Konto Jira (site) założone, wszyscy mają dostęp
 - [ ] Projekt Scrum utworzony z właściwą nazwą
 - [ ] Sprint 1 skonfigurowany z datami
 - [ ] Minimum 6 PBI w backlogu z opisami
