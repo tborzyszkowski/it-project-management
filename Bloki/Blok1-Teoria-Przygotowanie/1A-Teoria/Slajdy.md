@@ -162,19 +162,7 @@ Kwiecień 2026
 
 # Scrum – Sprint w praktyce
 
-```
-┌─────────────────────────────────────────────────┐
-│                    SPRINT (45 min)               │
-│                                                   │
-│  Product    ──►  Sprint     ──►  Increment       │
-│  Backlog        Backlog         (gotowe PBI)     │
-│  (lista         (plan                            │
-│  życzeń)         sprintu)                        │
-└─────────────────────────────────────────────────┘
-     ▲                                    │
-     │         Retrospektywa              │
-     └────────────────────────────────────┘
-```
+![Cykl iteracji Scrum](./scrum-iteracja.png)
 
 ---
 

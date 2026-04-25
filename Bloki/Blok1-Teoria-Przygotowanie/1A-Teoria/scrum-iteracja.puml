@@ -1,0 +1,64 @@
+@startuml scrum-iteracja
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 13
+skinparam ArrowColor #555555
+skinparam ArrowThickness 2
+
+skinparam rectangle {
+  BackgroundColor #DBEAFE
+  BorderColor #3B82F6
+  BorderThickness 2
+  FontStyle bold
+}
+
+skinparam card {
+  BackgroundColor #F1F5F9
+  BorderColor #94A3B8
+  BorderThickness 1.5
+}
+
+skinparam note {
+  BackgroundColor #FEF9C3
+  BorderColor #EAB308
+}
+
+' ── Product Backlog ──────────────────────────────────────────────
+rectangle "📋 Product Backlog\n(lista wymagań / PBI)" as PB #DBEAFE
+
+' ── Sprint ───────────────────────────────────────────────────────
+rectangle " " as SPRINT_BORDER {
+
+  card "🗓️ Sprint Planning\n──────────────────\nWybór PBI do sprintu\nSzacowanie SP\nUstalenie Sprint Goal" as SPL #EFF6FF
+
+  card "🗒️ Sprint Backlog\n──────────────────\nWybrane PBI\n+ rozbite na Tasks" as SB #EFF6FF
+
+  card "☀️ Daily Scrum\n──────────────────\n• Co zrobiłem wczoraj?\n• Co zrobię dziś?\n• Czy coś blokuje?" as DS #EFF6FF
+
+  note as N1
+    <b>SPRINT</b>
+    1–4 tygodnie
+  end note
+
+  SPL -right-> SB
+  SB -right-> DS
+  DS -up-> SB : aktualizacja\nbacklogu
+}
+
+' ── Increment ────────────────────────────────────────────────────
+rectangle "✅ Increment\n──────────────\nDziałający przyrost\nspełniający DoD" as INC #DCFCE7
+
+' ── Sprint Review ────────────────────────────────────────────────
+card "👥 Sprint Review\n──────────────────\nPrezentacja przyrostu\nInteresariuszom" as REV #FEF9C3
+
+' ── Retrospektywa ────────────────────────────────────────────────
+card "🔁 Retrospektywa\n──────────────────\nCo poszło dobrze?\nCo poprawić?\nAction items" as RET #FCE7F3
+
+' ── Strzałki ─────────────────────────────────────────────────────
+PB -right-> SPL : wybór PBI\ndo sprintu
+DS -down-> INC : gotowy\nprzyrost
+INC -right-> REV
+REV -right-> RET
+RET -down-> PB : feedback\n+ ulepszenia\ndo backlogu
+
+@enduml

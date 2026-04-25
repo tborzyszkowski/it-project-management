@@ -29,7 +29,7 @@ jakie role pełnią poszczególne osoby w zespole i jakich narzędzi się używa
 
 - **Chaos Report (Standish Group)** – kluczowe dane:
   - tylko ~30% projektów IT kończy się sukcesem (na czas, budżet, zakres),
-  - najczęstsze przyczyny niepowodzeń: niejasne wymagania, brak komunikacji, scope creep.
+  - najczęstsze przyczyny niepowodzeń: niejasne wymagania, brak komunikacji, rozszerzanie zakresu projektu.
 
 - **Trójkąt projektowy** (Iron Triangle):
   - trzy wierzchołki: Zakres – Czas – Budżet,
@@ -106,6 +106,10 @@ Scrum to **framework** (nie metodologia!) oparty na Agile.
 | **Daily Scrum** | Synchronizacja, impedimenty | ~10 min (środek sprintu) |
 | **Sprint Review** | Pokaż przyrost stakeholderom | ~15 min (Blok 2) |
 | **Retrospektywa** | Poprawa procesu | ~15 min (Blok 2) |
+
+**Cykl iteracji Scrum (jeden Sprint):**
+
+![Cykl iteracji Scrum](./scrum-iteracja.png)
 
 **Sprint na dzisiejszych zajęciach = 45 minut** ← jedna iteracja!
 
