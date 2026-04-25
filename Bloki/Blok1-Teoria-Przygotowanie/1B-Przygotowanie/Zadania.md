@@ -356,7 +356,76 @@ Dla każdej Story z listy powyżej:
 
 ---
 
-### Zadanie 4.5 – Ustal Definition of Done
+### Zadanie 4.5 – Wybierz sposób przechowywania wyników pracy
+
+**Prowadzi: Scrum Master** (decyzja całego zespołu)
+
+Zanim zaczniesz sprint, ustal gdzie zespół będzie zapisywał napisane teksty, opisy postaci i inne efekty pracy. Masz trzy opcje — wybierz jedną i trzymaj się jej przez cały sprint.
+
+---
+
+#### Opcja 1 — Jira Pages ✅ *(rekomendowana)*
+
+Jira Pages to wbudowany edytor dokumentów (uproszczony wiki). Nie wymaga żadnych dodatkowych narzędzi.
+
+1. W lewym menu projektu kliknij **„Pages"**  
+   *(jeśli nie widać: kliknij „+ More" w lewym menu → „Pages")*
+
+2. Kliknij **„Create page"**
+
+3. Nadaj stronie tytuł zgodny z rozdziałem / elementem powieści  
+   *(np. „Rozdział 1 – Odkrycie ciała")*
+
+4. Napisz lub wklej tekst w edytorze — obsługuje nagłówki, listy, tabele, obrazy
+
+5. Kliknij **„Publish"** — strona jest od razu widoczna dla całego zespołu
+
+6. **Połącz stronę ze Story**: otwórz Story → prawy panel → **„Link a page"** → wybierz stronę
+
+**Proponowana struktura stron:**
+```
+📄 [Tytuł powieści] — strona główna
+  ├── 📄 Postacie i świat przedstawiony
+  ├── 📄 Rozdział 1 – [tytuł]
+  ├── 📄 Rozdział 2 – [tytuł]
+  └── 📄 Notatki ze Sprintu
+```
+
+> ✅ Pages mają historię zmian — można wrócić do poprzedniej wersji
+
+---
+
+#### Opcja 2 — Opis i komentarze w Story
+
+Dla krótkich fragmentów (opis postaci, krótka scena):
+
+1. Otwórz Story w Backlogu
+2. Kliknij pole **„Description"** — wpisz lub wklej tekst (obsługuje formatowanie rich text)
+3. Aby dodać wersję do przeglądu przez SM/QA: kliknij **„Add a comment"** na dole Story
+
+> ⚠️ Brak wersjonowania i trudniejsza nawigacja przy dłuższych tekstach — nie zalecane dla rozdziałów
+
+---
+
+#### Opcja 3 — Załączniki (pliki Word / PDF / txt)
+
+Jeśli zespół woli pisać w zewnętrznym edytorze (Word, Google Docs, Notepad++):
+
+1. Otwórz Story lub Epic
+2. Kliknij ikonę spinacza **„Attach"** (prawy panel lub dolny pasek)
+3. Przeciągnij plik lub kliknij **„Upload"** → wybierz plik z dysku
+4. Plik jest widoczny przy Issue dla całego zespołu
+5. Aby zaktualizować: wgraj nową wersję pod tą samą nazwą
+
+> ⚠️ Brak edycji online — trzeba pobierać, edytować i wgrywać nową wersję
+
+---
+
+> ✅ **Sprawdzenie**: Cały zespół wie gdzie wklejać teksty i jak linkować wyniki do Stories w Jira.
+
+---
+
+### Zadanie 4.6 – Ustal Definition of Done
 
 **Prowadzi: Scrum Master** (wszyscy ustalają razem)
 
@@ -394,6 +463,7 @@ Po zakończeniu Sprint Planning sprawdź listę kontrolną:
 - [ ] Każde PBI ma Story Points
 - [ ] Sprint Backlog zawiera 12–15 SP
 - [ ] Każde PBI ma co najmniej 1 Task przypisany do Developera
+- [ ] Ustalono sposób przechowywania wyników (Pages / Description / Załączniki)
 - [ ] Definition of Done zapisane w Wiki
 - [ ] Wszyscy znają swoje zadania na sprint
 

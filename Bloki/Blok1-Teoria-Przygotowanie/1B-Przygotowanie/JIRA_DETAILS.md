@@ -1,4 +1,4 @@
-# Jira Free – Szczegółowe kroki krok po kroku
+# Jira Free – Szczegółowe kroki
 
 > Dokument uzupełniający do `Zadania.md` — zawiera dokładne opisy ekranów i przycisków.  
 > Używaj go gdy instrukcja w Zadaniach.md jest niewystarczająca lub coś wygląda inaczej.
