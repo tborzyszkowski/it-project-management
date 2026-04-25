@@ -32,7 +32,7 @@ tworzy backlog dla projektu „Powieść pisana z AI" i przeprowadza Sprint Plan
 | Rola | Ile osób | Zadanie teraz |
 |---|---|---|
 | Product Owner | 1 | Zakłada wizję produktu, prowadzi Sprint Planning |
-| Scrum Master | 1 | Zakłada konto Jira, tworzy site i projekt, zaprasza zespół, facylituje |
+| Scrum Master | 1 | Zakłada konto Jira, tworzy site i projekt, zaprasza zespół, ułatwia |
 | Developer | 2–3 | Uczestniczy w Sprint Planning, szacuje PBI |
 
 **Losowanie gatunków powieści:**

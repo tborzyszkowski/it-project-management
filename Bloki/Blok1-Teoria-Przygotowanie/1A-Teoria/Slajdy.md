@@ -162,7 +162,7 @@ Kwiecień 2026
 
 # Scrum – Sprint w praktyce
 
-![Cykl iteracji Scrum](./scrum-iteracja.png)
+![width:600px](./scrum-iteracja.png)
 
 ---
 
