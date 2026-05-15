@@ -22,7 +22,7 @@
 
 Po zakończeniu bloku student:
 
-- przeprowadził kompletny sprint w ADO (backlog, tablica, praca z AI),
+- przeprowadził kompletny sprint w Jira (backlog, tablica Board, praca z AI),
 - uczestniczył w symulowanym Daily Scrum (3 pytania, impedimenty),
 - zaprezentował przyrost produktu podczas Sprint Review,
 - uczestniczył w retrospektywie metodą Start/Stop/Continue,
@@ -48,7 +48,7 @@ Po zakończeniu bloku student:
 
 ## Wskazówki dla prowadzącego
 
-- Podczas sprintu: obserwuj tablice zespołów w ADO, zachęcaj do aktualizowania statusów.
+- Podczas sprintu: obserwuj tablice zespołów w Jira (widok Board), zachęcaj do aktualizowania statusów.
 - Daily Scrum: zatrzymaj wszystkich i przeprowadź spotkanie na stojąco (Scrum = „mecz w rugby", spotkanie na stojąco).
 - Sprint Review: każdy zespół ma **3 minuty** – pilnuj czasu.
 - Retrospektywa: nie oceniaj, tylko facylituj – wszystkie odpowiedzi są dobre.
