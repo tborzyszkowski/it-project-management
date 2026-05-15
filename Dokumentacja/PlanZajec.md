@@ -12,7 +12,7 @@ Po zajęciach student będzie potrafił:
 
 - wyjaśnić różnice między kluczowymi metodykami zarządzania projektami IT (Waterfall, Scrum, Kanban),
 - opisać role projektowe i ich odpowiedzialności,
-- założyć i skonfigurować projekt w narzędziu Azure DevOps (plan bezpłatny),
+- założyć i skonfigurować projekt w narzędziu Jira (plan bezpłatny),
 - pracować w zespole posługując się backlogiem, tablicą Kanban i przebiegiem sprintu,
 - przeprowadzić retrospektywę i wyciągnąć wnioski z realizacji sprintu.
 
@@ -90,7 +90,7 @@ Projekt celowo **nie wymaga umiejętności technicznych** – pozwala za to skup
 - Do 10 użytkowników, funkcje Scrum i Kanban, raporty.
 - Ograniczenia: brak zaawansowanych raportów i integracji.
 
-> Na zajęciach używamy **Azure DevOps** (łatwiejsze zakładanie kont bez karty płatniczej).
+> Na zajęciach używamy **Jira** (bezpłatny plan do 10 użytkowników, pełna obsługa Scrum i Kanban, brak wymogu karty płatniczej).
 
 ---
 
@@ -114,47 +114,41 @@ Projekt celowo **nie wymaga umiejętności technicznych** – pozwala za to skup
 
 ---
 
-#### Krok 2 – Zakładanie kont Azure DevOps (15 min)
+#### Krok 2 – Zakładanie kont Jira (15 min)
 
 **Instrukcja krok po kroku:**
 
-1. Przejdź na stronę [https://dev.azure.com](https://dev.azure.com).
-2. Kliknij **„Start free"**.
-3. Zaloguj się kontem Microsoft (Outlook, Hotmail) lub utwórz nowe konto.
-4. Po zalogowaniu kliknij **„Create new organization"**.
-5. Podaj nazwę organizacji: `bim-[nazwazespolu]` (np. `bim-kryminał`).
-6. Wybierz region: **West Europe**.
-7. Kliknij **„Continue"**.
+1. Przejdź na stronę [https://www.atlassian.com/software/jira/free](https://www.atlassian.com/software/jira/free).
+2. Kliknij **„Get it free"**.
+3. Zarejestruj się przez e-mail lub zaloguj się przez Google / Microsoft / Apple.
+4. Potwierdź adres e-mail – Atlassian wyśle **6-cyfrowy kod weryfikacyjny**.
+5. Podaj nazwę site: `bim-[nazwazespolu]` (np. `bim-kryminal`). Tylko litery, cyfry i myślniki — bez polskich znaków.
+6. *„What kind of work?"* → wybierz **„Software development"** → **„Next"**.
+7. Szablon projektu → kliknij **„Scrum"** → **„Select"**.
+8. Typ projektu → **„Team-managed project"**.
+9. Nazwa projektu: tytuł roboczy powieści → kliknij **„Create project"** — Jira otwiera widok **Backlog**.
 
-> **Uwaga**: Scrum Master zakłada organizację i **zaprasza pozostałych członków** przez Settings → Users → Add users (podając ich adresy e-mail).
+> **Uwaga**: Scrum Master zakłada projekt i **zaprasza pozostałych członków** przez Project settings → Access → Add people (podając ich adresy e-mail). Każdy uczestnik klika **„Join project"** w e-mailu zaproszenia.
 
 ---
 
-#### Krok 3 – Konfiguracja projektu w ADO (20 min)
+#### Krok 3 – Konfiguracja projektu w Jira (20 min)
 
-**Tworzenie projektu:**
+**Projekt powinien być już utworzony po Kroku 2. Skonfiguruj sprint:**
 
-1. Na stronie organizacji kliknij **„New project"**.
-2. Nazwa projektu: tytuł roboczy powieści.
-3. Widoczność: **Private**.
-4. Version control: **Git**.
-5. Work item process: **Scrum** ← ważne!
-6. Kliknij **„Create"**.
+1. W lewym menu przejdź do **Backlog**.
+2. Kliknij **„Create sprint"** — pojawi się sekcja `Sprint 1`.
+3. Kliknij ikonę `...` przy nazwie sprintu → **„Edit sprint"** → ustaw daty odpowiadające blokowi 2 i nazwę `Sprint 1`.
+4. Kliknij **„Update"**.
 
-**Konfiguracja Boards:**
-
-1. Przejdź do **Boards → Backlogs**.
-2. Skonfiguruj sprint: kliknij ikonę koła zębatego (Project Settings → Boards → Team Configuration → Iterations).
-3. Utwórz sprint o nazwie `Sprint 1` z datami odpowiadającymi blokowi 2.
-
-**Typy elementów w backlogu (Scrum template):**
+**Typy elementów w backlogu (Jira Scrum – Team-managed):**
 
 | Typ | Opis | Przykład |
 |---|---|---|
 | **Epic** | Duży obszar produktu | „Napisanie powieści" |
-| **Feature** | Część Epika | „Rozdział 1: Zbrodnia" |
-| **Product Backlog Item (PBI)** | Konkretna funkcjonalność | „Opis miejsca zbrodni (min. 200 słów)" |
-| **Task** | Działanie techniczne | „Wygeneruj opis z AI, przeredaguj" |
+| **Story** | Konkretna historyjka użytkownika (odpowiednik PBI) | „Opis miejsca zbrodni (min. 200 słów)" |
+| **Task** | Działanie techniczne niepowiązane ze Story | „Wygeneruj opis z AI, przeredaguj" |
+| **Sub-task** | Podzadanie w ramach Story lub Task | „Prompt do AI", „Redakcja tekstu" |
 | **Bug** | Defekt | „Postać ma dwa różne imiona" |
 
 ---
@@ -163,7 +157,7 @@ Projekt celowo **nie wymaga umiejętności technicznych** – pozwala za to skup
 
 **Product Owner prowadzi sesję planowania:**
 
-1. PO tworzy w backlogu co najmniej **6 PBI** dla projektu powieści, np.:
+1. PO tworzy w backlogu co najmniej **6 Story** dla projektu powieści, np.:
    - Napisanie opisu świata przedstawionego (min. 150 słów)
    - Stworzenie profilu głównego bohatera
    - Stworzenie profilu antagonisty
@@ -173,11 +167,11 @@ Projekt celowo **nie wymaga umiejętności technicznych** – pozwala za to skup
    - Przygotowanie okładki (opis / prompt dla AI)
 
 2. Scrum Master prowadzi **szacowanie** (Planning Poker uproszczony):
-   - Każdy developer ocenia PBI w skali Story Points: 1 / 2 / 3 / 5 / 8.
+   - Każdy developer ocenia Story w skali Story Points: 1 / 2 / 3 / 5 / 8.
    - Dyskusja przy rozbieżnościach.
    - Docelowa pojemność sprintu: **12–15 Story Points** (ok. 45 min pracy).
 
-3. PBI z najwyższym priorytetem trafiają do **Sprint 1 Backlog**.
+3. Story z najwyższym priorytetem trafiają do **Sprint 1** — w Backlogu zaznacz Story i wybierz **„Move to Sprint 1"**.
 
 ---
 
@@ -185,28 +179,29 @@ Projekt celowo **nie wymaga umiejętności technicznych** – pozwala za to skup
 
 ### Część 2A – Sprint (45 minut aktywnej pracy)
 
-**Scrum Master uruchamia sprint w ADO:**
+**Scrum Master uruchamia sprint w Jira:**
 
-1. Boards → Backlogs → Sprint 1 → kliknij **„Start sprint"** (lub ustaw daty).
-2. Przełącz widok na **Boards → Sprint Board** (kolumny: To Do / In Progress / Done).
+1. Backlog → przy sekcji `Sprint 1` kliknij **„Start sprint"**.
+2. Ustaw daty trwania sprintu → kliknij **„Start"**.
+3. Przejdź do widoku **Board** (lewe menu) — widoczne kolumny: To Do / In Progress / Done.
 
 **Zasady pracy podczas sprintu:**
 
-- Każdy Developer bierze **jeden Task** naraz i przeciąga go do `In Progress`.
+- Każdy Developer bierze **jedno Task / Story** naraz i przeciąga je do `In Progress`.
 - Korzysta z AI (ChatGPT/Copilot) do generowania treści, następnie **redaguje i poprawia**.
-- Po ukończeniu przeciąga do `Done` i aktualizuje opis PBI.
-- QA weryfikuje Definition of Done (min. słów, spójność fabuły) i oznacza PBI jako `Done` lub odsyła z komentarzem.
+- Po ukończeniu przeciąga do `Done` i aktualizuje opis Story.
+- QA weryfikuje Definition of Done (min. słów, spójność fabuły) i oznacza Story jako `Done` lub odsyła z komentarzem.
 
 **Przykładowy workflow dla jednego PBI:**
 
 ```
 [To Do] "Napisanie Rozdziału 1"
-   ↓ Developer bierze task
+   ↓ Developer bierze Story
 [In Progress] → pisze prompt do AI → redaguje tekst → wkleja do dokumentu
    ↓ po ukończeniu
 [Review] → QA sprawdza: czy ma 300+ słów? czy imiona są spójne?
    ↓ po akceptacji
-[Done] → PBI zamknięte, PO powiadamiany
+[Done] → Story zamknięte, PO powiadamiany
 ```
 
 **Rola AI w projekcie:**
@@ -228,7 +223,7 @@ Każdy Developer odpowiada na 3 pytania:
 2. Co zamierzam zrobić do następnego?
 3. Czy coś mi przeszkadza? (impedimenty)
 
-Scrum Master notuje impedimenty w ADO jako `Impediment` work item i stara się je usunąć.
+Scrum Master notuje impedimenty w Jira jako nowy **Task** z etykietą `impediment` i stara się je usunąć.
 
 ---
 
@@ -240,10 +235,10 @@ Każdy zespół **prezentuje przyrost** (to, co zostało ukończone):
 - PO ocenia: czy produkt spełnia oczekiwania?
 - Pozostałe zespoły (stakeholders) mogą zadawać pytania i zgłaszać uwagi.
 
-Metryki do omówienia w ADO:
+Metryki do omówienia w Jira:
 - Velocity (ile Story Points ukończono?)
-- Burndown Chart (Boards → Analytics → Burndown)
-- Ile PBI zostało w backlogu?
+- Burndown Chart (lewe menu → Reports → Burndown Chart)
+- Ile Story zostało w backlogu?
 
 ---
 
@@ -257,7 +252,7 @@ Scrum Master prowadzi retrospektywę metodą **„Start / Stop / Continue"**:
 | **Stop** | Co powinniśmy przestać robić? | „Zmieniać PBI w trakcie sprintu" |
 | **Continue** | Co działa i powinniśmy kontynuować? | „Codzienne aktualizowanie tablicy" |
 
-Wyniki retrospektywy wpisywane są jako **Wiki** w ADO (Overview → Wiki → Create page).
+Wyniki retrospektywy wpisywane są jako **Task** w Jira z tytułem „Retrospektywa Sprint 1" i opisem zawierającym wnioski w układzie Start / Stop / Continue.
 
 ---
 
@@ -301,7 +296,7 @@ Wyniki retrospektywy wpisywane są jako **Wiki** w ADO (Overview → Wiki → Cr
 1. Jak metodyki Agile mogą zastosować się do projektu BIM? Co byłby backlogiem? Co sprintem?
 2. Jaką rolę najchętniej wybralibyście w prawdziwym projekcie IT i dlaczego?
 3. Co było największym wyzwaniem podczas pracy zespołowej dziś?
-4. Jakie narzędzie (ADO / Jira) wydaje się bardziej intuicyjne i dlaczego?
+4. Jakie możliwości Jiry były najbardziej przydatne w pracy zespołowej i dlaczego?
 
 ---
 
@@ -316,7 +311,7 @@ Wyniki retrospektywy wpisywane są jako **Wiki** w ADO (Overview → Wiki → Cr
 | 0:35 – 0:50 | Role w projekcie IT | Wykład + ćwiczenie: przypisz rolę do scenariusza |
 | 0:50 – 1:00 | Narzędzia: ADO vs Jira, omówienie planów | Wykład |
 | 1:00 – 1:05 | Podział na zespoły, losowanie gatunku powieści | Organizacyjne |
-| 1:05 – 1:20 | Zakładanie kont i organizacji w Azure DevOps | Laboratorium |
+| 1:05 – 1:20 | Zakładanie kont i projektu w Jira | Laboratorium |
 | 1:20 – 1:40 | Konfiguracja projektu, backlogu i sprintu | Laboratorium |
 | 1:40 – 2:00 | Sprint Planning – PBI + szacowanie Story Points | Warsztat |
 
@@ -338,7 +333,7 @@ Wyniki retrospektywy wpisywane są jako **Wiki** w ADO (Overview → Wiki → Cr
 ### Wymagania sprzętowe i dostępowe
 
 - Sala laboratoryjna z komputerami z dostępem do Internetu.
-- Każdy student potrzebuje adresu e-mail (najlepiej Microsoft / Outlook).
+- Każdy student potrzebuje adresu e-mail (dowolny; można też zalogować się przez Google lub Microsoft).
 - Opcjonalnie: smartfony do szybkiego logowania i weryfikacji.
 
 ### Zasoby do przygotowania przez prowadzącego
@@ -346,7 +341,7 @@ Wyniki retrospektywy wpisywane są jako **Wiki** w ADO (Overview → Wiki → Cr
 - [ ] Slajdy z teorią (metodyki, role, narzędzia).
 - [ ] Kartki z losowaniem gatunków powieści.
 - [ ] Wydruk kart Planning Poker (1, 2, 3, 5, 8, 13, ?) lub wersja cyfrowa.
-- [ ] Przykładowy backlog w ADO (demo, do pokazania studentom).
+- [ ] Przykładowy backlog w Jira (demo, do pokazania studentom).
 - [ ] Lista przykładowych promptów AI dla każdego gatunku.
 
 ### Narzędzia używane na zajęciach
