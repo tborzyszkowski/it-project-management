@@ -13,11 +13,17 @@ Bloki/
 │   ├── README.md                         Przegląd bloku 1
 │   ├── 1A-Teoria/                        Część 1A – Teoria (60 min)
 │   │   ├── README.md                     Opis części 1A
-│   │   └── Slajdy.md                     Prezentacja Marp
-│   └── 1B-Przygotowanie/                 Część 1B – Lab setup (60 min)
+│   │   ├── Slajdy.md                     Prezentacja Marp (źródło)
+│   │   ├── Slajdy.pdf                    Prezentacja (gotowa do druku)
+│   │   ├── scrum-iteracja.puml           Diagram cyklu Scrum (PlantUML)
+│   │   └── scrum-iteracja.png            Diagram cyklu Scrum (obraz)
+│   └── 1B-Przygotowanie/                 Część 1B – Przygotowanie (60 min)
 │       ├── README.md                     Opis części 1B
-│       ├── Zadania.md                    Instrukcje krok po kroku
-│       └── Slajdy.md                     Prezentacja Marp
+│       ├── Zadania.md                    Instrukcje krok po kroku dla studentów
+│       ├── Slajdy.md                     Prezentacja Marp (źródło)
+│       ├── Slajdy.pdf                    Prezentacja (gotowa do druku)
+│       ├── JIRA_DETAILS.md              Szczegółowe instrukcje obsługi Jira
+│       └── JIRA_PRZYKŁAD.md             Pełny przykład projektu w Jira
 └── Blok2-Sprint-Podsumowanie/           ← BLOK 2 (120 min)
     ├── README.md                         Przegląd bloku 2
     ├── 2A-Sprint/                        Część 2A – Sprint (45 min)
@@ -30,7 +36,7 @@ Bloki/
     ├── 2C-SprintReview/                  Część 2C – Sprint Review (15 min)
     │   ├── README.md
     │   └── Zadania.md
-    ├── 2D-Retrospektywa/                 Część 2D – Retro (15 min)
+    ├── 2D-Retrospektywa/                 Część 2D – Retrospektywa (15 min)
     │   ├── README.md
     │   └── Zadania.md
     └── 2E-Podsumowanie/                  Część 2E – Podsumowanie (35 min)
@@ -48,7 +54,7 @@ Bloki/
 | 0:10–0:35 | Blok 1 | 1A – Metodyki | Wykład + dyskusja |
 | 0:35–0:50 | Blok 1 | 1A – Role i narzędzia | Wykład |
 | 1:00–1:05 | Blok 1 | 1B – Podział na zespoły | Organizacyjne |
-| 1:05–1:20 | Blok 1 | 1B – Konta ADO | Laboratorium |
+| 1:05–1:20 | Blok 1 | 1B – Zakładanie kont Jira | Laboratorium |
 | 1:20–1:40 | Blok 1 | 1B – Konfiguracja projektu | Laboratorium |
 | 1:40–2:00 | Blok 1 | 1B – Sprint Planning | Warsztat |
 | 2:00–2:45 | Blok 2 | 2A – Sprint | Laboratorium |
@@ -68,7 +74,7 @@ Projekt jest symulatorem prawdziwego projektu IT – bez potrzeby programowania.
 | Analogia IT | Projekt powieści |
 |---|---|
 | Produkt końcowy | Gotowa powieść |
-| Feature / User Story | Rozdział, scena, postać |
+| Story / User Story | Rozdział, scena, postać |
 | Bug / Defect | Błąd fabularny, niespójność |
 | Definition of Done | Rozdział ≥ 300 słów, po review |
 | Release | Opublikowany plik PDF |
@@ -77,7 +83,7 @@ Projekt jest symulatorem prawdziwego projektu IT – bez potrzeby programowania.
 
 ## Przydatne linki
 
-- [Azure DevOps](https://dev.azure.com) – narzędzie projektowe (bezpłatny plan Basic)
+- [Jira Free](https://www.atlassian.com/software/jira/free) – narzędzie projektowe (bezpłatny plan, do 10 użytkowników)
 - [Microsoft Copilot](https://copilot.microsoft.com) – AI bez logowania
 - [ChatGPT](https://chat.openai.com) – AI z logowaniem
 - [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) – podgląd slajdów Marp
