@@ -19,7 +19,7 @@ zgłaszania impedimentów i aktualizacji planów.
 |---|---|
 | 0:00–0:01 | SM przerywa sprint, prosi o powstanie |
 | 0:01–0:07 | Każdy Developer odpowiada na 3 pytania |
-| 0:07–0:09 | SM zbiera impedimenty, notuje w ADO |
+| 0:07–0:09 | SM zbiera impedimenty, notuje w Jira |
 | 0:09–0:10 | SM zamyka meeting, wznawia sprint |
 
 ---
@@ -48,11 +48,10 @@ Każdy Developer odpowiada krótko (max 30 sekund):
 
 Każdy impediment zgłoszony podczas Daily Scrum:
 
-1. SM zapisuje w ADO:
-   - New Work Item → **Impediment**
+1. SM zapisuje w Jira:
+   - **„+ Create"** → Task, etykieta: `impediment`
    - Tytuł: krótki opis problemu
    - Assigned To: SM
-   - Area: Sprint 1
 
 2. SM natychmiast próbuje rozwiązać lub eskaluje do prowadzącego
 

@@ -72,7 +72,7 @@ zarządzania zakresem w dynamicznych projektach niż Gantt.
 
 ---
 
-### Lekcja 5: ADO vs Jira – co wybrać? (3 min)
+### Lekcja 5: Jira w praktyce – co warto zapamiętać? (3 min)
 
 **Tabela porównawcza** (patrz slajdy).  
 **Konkluzja**: Wybór narzędzia zależy od ekosystemu, nie od funkcji – koncepcje są identyczne.
@@ -84,7 +84,7 @@ zarządzania zakresem w dynamicznych projektach niż Gantt.
 1. Jak metodyki Agile mogą zastosować się do projektów BIM? Co byłby backlogiem? Co sprintem?
 2. Jaką rolę najchętniej wybralibyście w prawdziwym projekcie IT i dlaczego?
 3. Co było największym wyzwaniem podczas pracy zespołowej dziś?
-4. Jakie narzędzie (ADO / Jira) wydaje się bardziej intuicyjne?
+4. Co w Jira było najbardziej przydatne, a co sprawiło trudność?
 5. Co zrobilibyście inaczej w Sprint 2, wiedząc co wiecie teraz?
 
 ---

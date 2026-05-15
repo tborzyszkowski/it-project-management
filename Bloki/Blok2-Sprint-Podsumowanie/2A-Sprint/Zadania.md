@@ -1,7 +1,7 @@
 # Zadania – Część 2A: Sprint
 
 > **Czas:** 45 minut | **Forma:** laboratorium  
-> Praca w zespołach. Każda osoba pracuje nad swoimi Taskami. Aktualizuj ADO na bieżąco!
+> Praca w zespołach. Każda osoba pracuje nad swoimi Taskami. Aktualizuj Jirę na bieżąco!
 
 ---
 
@@ -12,8 +12,8 @@ Scrum Master sprawdza:
 - [ ] Sprint 1 Backlog zawiera PBI z przypisanymi Taskami
 - [ ] Każdy Developer wie, które Taski ma do wykonania
 - [ ] Wspólny dokument (Google Docs / Word Online) jest utworzony i udostępniony
-- [ ] Definition of Done jest zapisane w Wiki ADO
-- [ ] Wszyscy mają otwarte ADO w przeglądarce
+- [ ] Definition of Done jest zapisane w opisie Epica w Jira
+- [ ] Wszyscy mają otwartą Jirę w przeglądarce
 
 ---
 
@@ -21,7 +21,7 @@ Scrum Master sprawdza:
 
 **Wykonuje: Scrum Master**
 
-1. Wejdź do **Boards → Boards** (Sprint Board, nie Backlogs)
+1. Wejdź do widoku **Board** (lewe menu)
 2. Upewnij się, że widoczne są kolumny: **To Do | In Progress | Review | Done**
 3. Sprawdź, czy wszystkie Taski z Sprint 1 widoczne są w kolumnie `To Do`
 4. Zakomunikuj zespołowi: **„Sprint 1 – Start!"** i zanotuj godzinę startu
@@ -85,10 +85,10 @@ Wklej prompt → kliknij „Wyślij" → poczekaj na odpowiedź.
 3. Dodaj podpis autora i datę
 4. Zapisz dokument
 
-### Krok 6 – Zaktualizuj ADO
+### Krok 6 – Zaktualizuj Jirę
 
-1. Wróć do ADO → Sprint Board
-2. Otwórz swój Task
+1. Wróć do Jira → Board
+2. Otwórz swój Task / Story
 3. Zmień status na **„Review"** (przeciągnij lub edytuj)
 4. W komentarzu do Taska napisz: `"Tekst gotowy, wklejony do dokumentu. Czeka na QA."`
 5. Zapisz
@@ -176,7 +176,7 @@ Zakończ cliffhangerem.
 
 ### Kiedy PBI trafia do Review:
 
-1. Otwórz PBI w ADO
+1. Otwórz Story / Task w Jira
 2. Sprawdź każde kryterium DoD:
 
 ```
@@ -207,7 +207,7 @@ Definition of Done – checklist QA:
 2. Pilnuj **WIP Limit**: max 2 zadania In Progress na osobę
 3. Zbieraj impedimenty od Developerów
 4. Dla każdego impedimentu:
-   - Boards → New Work Item → **Impediment**
+   - **„+ Create"** → Task, etykieta: `impediment`
    - Opisz problem, przypisz do SM
    - Próbuj rozwiązać lub eskaluj
 
@@ -224,7 +224,7 @@ Scrum Master tworzy dokument na początku sprintu:
 2. Utwórz nowy dokument
 3. Nadaj tytuł: `[Tytuł powieści] – Sprint 1`
 4. Kliknij „Udostępnij" → „Każdy z linkiem może edytować"
-5. Skopiuj link i wklej go jako komentarz do Epica w ADO
+5. Skopiuj link i wklej go jako komentarz do Epica w Jira
 
 ### Struktura dokumentu
 
@@ -254,7 +254,7 @@ Scrum Master tworzy dokument na początku sprintu:
 | Minimum 2 ukończone PBI (status: Done) | ✅ / ⚠️ |
 | Przynajmniej 1 rozdział w dokumencie | ✅ / ⚠️ |
 | Profile głównych postaci | ✅ / ⚠️ |
-| ADO zaktualizowane (statusy PBI) | ✅ / ⚠️ |
-| Burndown Chart widoczny w Analytics | ✅ / ⚠️ |
+| Jira zaktualizowana (statusy Story) | ✅ / ⚠️ |
+| Burndown Chart widoczny w Reports | ✅ / ⚠️ |
 
 > Następnie: **Sprint Review** → [Zadania 2C](../2C-SprintReview/Zadania.md)

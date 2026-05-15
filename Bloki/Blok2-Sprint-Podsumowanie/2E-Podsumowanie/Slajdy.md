@@ -43,11 +43,11 @@ style: |
 | Blok | Aktywność | Narzędzie |
 |---|---|---|
 | 1A | Teoria: metodyki, role, narzędzia | Wykład |
-| 1B | Konfiguracja ADO + Sprint Planning | Azure DevOps |
-| 2A | Sprint z AI (45 min) | ADO + ChatGPT/Copilot |
-| 2B | Daily Scrum | ADO Boards |
-| 2C | Sprint Review + Velocity | ADO Analytics |
-| 2D | Retrospektywa Start/Stop/Continue | ADO Wiki |
+| 1B | Konfiguracja Jira + Sprint Planning | Jira |
+| 2A | Sprint z AI (45 min) | Jira + ChatGPT/Copilot |
+| 2B | Daily Scrum | Jira Board |
+| 2C | Sprint Review + Velocity | Jira Reports |
+| 2D | Retrospektywa Start/Stop/Continue | Jira Task |
 
 ---
 
@@ -140,7 +140,7 @@ Definition of Done – Rozdział powieści:
 ✅ Styl odpowiada gatunkowi
 ✅ Wklejony do dokumentu
 ✅ Review przez QA
-✅ PBI = Done w ADO
+✅ Story = Done w Jira
 ```
 
 > DoD **eliminuje dług techniczny**.  
@@ -182,19 +182,19 @@ Prognoza: 88 ÷ 11 = 8 sprintów
 
 ---
 
-# Lekcja 5: ADO vs Jira – co wybrać?
+# Lekcja 5: Jira w praktyce – co warto zapamiętać?
 
-| Cecha | Azure DevOps Free | Jira Free |
-|---|---|---|
-| Użytkownicy | **5** | 10 |
-| Scrum / Kanban | ✅ | ✅ |
-| CI/CD | 1800 min/mies. | ❌ |
-| MS 365 | Natywna ✅ | Plugin |
-| Karty płatniczej | ❌ nie trzeba | ❌ nie trzeba |
+| Cecha | Jira Free |
+|---|---|
+| Użytkownicy | do 10 |
+| Scrum / Kanban | ✅ |
+| CI/CD | ❌ (Jira Software only) |
+| Atlassian Ecosystem | Confluence, Bitbucket |
+| Karty płatniczej | ❌ nie trzeba |
 
 ## Wniosek:
 
-> Koncepcje są **identyczne**. Narzędzie dobierz do ekosystemu firmy.
+> Koncepcje są **identyczne** w każdym narzędziu. Jira to jeden z najpopularniejszych wyborów w branży.
 
 ---
 
@@ -230,7 +230,7 @@ Product Backlog  →  Sprint Planning  →  Sprint (1–4 tygodnie)
 
 4. Co zrobilibyście inaczej w **Sprint 2**?
 
-5. ADO vs Jira – które narzędzie wydaje się bardziej intuicyjne?
+5. Co w Jira było najbardziej przydatne, a co sprawiło trudność?
 
 ---
 
@@ -253,7 +253,7 @@ Product Backlog  →  Sprint Planning  →  Sprint (1–4 tygodnie)
 
 ## Co zabrać ze sobą
 
-- ✅ Konto Azure DevOps (zostaje)
+- ✅ Konto Jira (zostaje – bim-[nazwazespolu].atlassian.net)
 - ✅ Projekt powieści (macie link do dokumentu)
 - ✅ Doświadczenie jednego pełnego sprintu Scrum
 - ✅ Wiedza o rolach, metodykach i narzędziach
@@ -272,7 +272,7 @@ Plan zajęć: **Dokumentacja/PlanZajec.md**
 - Sprint 2 – dokończenie powieści
 - Kanban Board – praca bez sprintów
 - CI/CD – automatyczne „wydawanie" rozdziałów
-- Raporty i dashboardy w ADO
+- Raporty i dashboardy w Jira
 - Skalowanie Agile – SAFe, LeSS
 - Agile w projektach BIM – case study
 

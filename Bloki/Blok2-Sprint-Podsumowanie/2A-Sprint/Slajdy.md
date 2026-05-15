@@ -30,7 +30,7 @@ style: |
 
 ## 45 minut aktywnej pracy
 
-**Boards → Sprint 1 Board**
+**Board → Sprint 1**
 `To Do | In Progress | Review | Done`
 
 ---
@@ -41,7 +41,7 @@ style: |
 
 1. **Developer**: bierze Task → `In Progress` → pisze z AI → redaguje
 2. **QA**: sprawdza ukończone PBI wg DoD → zatwierdza lub odsyła
-3. **PO**: dostępny na pytania, **nie zmienia PBI!**
+3. **PO**: dostępny na pytania, **nie zmienia Story!**
 4. **SM**: usuwa przeszkody, pilnuje WIP Limit, moderuje tablicę
 
 ---
@@ -145,7 +145,7 @@ Długość: min. 300 słów.
 [ ] Styl odpowiada gatunkowi
 [ ] Tekst wklejony do dokumentu
 [ ] Brak oczywistych błędów logicznych
-[ ] PBI zaktualizowane w ADO
+[ ] Story zaktualizowana w Jira
 ```
 
 **Zatwierdź** → przeciągnij do `Done`
@@ -165,7 +165,7 @@ Długość: min. 300 słów.
 | Problem | Rozwiązanie |
 |---|---|
 | AI nie działa | Microsoft Copilot (bez logowania) |
-| Brak dostępu w ADO | SM sprawdza Settings → Users |
+| Brak dostępu w Jira | SM sprawdza Project settings → Access |
 | Brak wspólnego dokumentu | SM tworzy Google Docs |
 | Nie wiem co pisać | Zapytaj PO o wymagania |
 
@@ -184,12 +184,12 @@ i przeprowadź **Daily Scrum** → [Blok 2B](../2B-DailyScrum/Slajdy.md)
 
 ## Gdzie je znaleźć?
 
-| Metryka | Lokalizacja w ADO |
+| Metryka | Lokalizacja w Jira |
 |---|---|
-| **Burndown** | Boards → Analytics → Burndown |
-| **Velocity** | Po zakończeniu sprintu |
-| **WIP** | Tablica – kolumna In Progress |
-| **Remaining Work** | Task → pole Remaining Work |
+| **Burndown** | Reports → Burndown Chart |
+| **Velocity** | Reports → Velocity Chart |
+| **WIP** | Board – kolumna In Progress |
+| **Story Points** | Story → pole Story points |
 
 ---
 
@@ -200,7 +200,7 @@ i przeprowadź **Daily Scrum** → [Blok 2B](../2B-DailyScrum/Slajdy.md)
 - ✅ 2+ PBI w statusie **Done**
 - ✅ 1+ rozdziały w dokumencie
 - ✅ Profile postaci gotowe
-- ✅ ADO zaktualizowane
+- ✅ Jira zaktualizowana
 - ✅ Burndown Chart widoczny
 
 > Następnie: **Sprint Review** → prezentujecie przyrost!

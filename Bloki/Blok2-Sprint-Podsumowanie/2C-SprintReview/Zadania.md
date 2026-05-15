@@ -15,7 +15,7 @@
    *(np. „Napisanie wstępu do kryminału – profil detektywa i opis miejsca zbrodni")*
 
 2. **Co zostało ukończone (Done)?**  
-   Lista PBI ze statusem Done z ADO
+   Lista Story ze statusem Done z Jira (widok Board)
 
 3. **Co NIE zostało ukończone i dlaczego?**  
    Lista PBI w To Do / In Progress z krótkim wyjaśnieniem
@@ -26,7 +26,7 @@
 ### Przygotuj do demonstracji:
 
 - Otwórz dokument Google Docs / Word Online na pełnym ekranie
-- Otwórz ADO → Boards → Sprint 1 → widok tablicy (dla pokazania Done items)
+- Otwórz Jira → Board → Sprint 1 → widok tablicy (dla pokazania Done items)
 - Przygotuj fragment tekstu do odczytania (max 1 minuta czytania)
 
 ---
@@ -41,15 +41,15 @@
 > „Naszym celem było [X]. Pracowaliśmy nad [gatunek] powieścią pt. [tytuł]."
 
 #### 2. Co ukończyliśmy – Done (60 sekund)
-Pokaż tablicę ADO z ukończonymi PBI:
-> „Ukończyliśmy [N] z [M] zaplanowanych PBI. Oto co jest gotowe: [lista]."
+Pokaż tablicę Jira (Board) z ukończonymi Story:
+> „Ukończyliśmy [N] z [M] zaplanowanych Story. Oto co jest gotowe: [lista]."
 
 #### 3. Demonstracja (60 sekund)
 Odczytaj lub pokaż fragment ukończonego tekstu.  
 > „Posłuchajcie fragmentu [rozdziału / profilu postaci]..."
 
 #### 4. Co pozostało (30 sekund)
-> „W backlogu pozostało [N] PBI. W następnym sprincie skupilibyśmy się na [X]."
+> „W backlogu pozostało [N] Story. W następnym sprincie skupilibyśmy się na [X]."
 
 ---
 
@@ -64,7 +64,7 @@ Odczytaj lub pokaż fragment ukończonego tekstu.
 3. „Czego brakuje, żebyś był/-a wciągnięty/-a od pierwszej strony?"
 4. „Jak oceniasz spójność postaci i klimat gatunku?"
 
-> PO notuje feedback w ADO (komentarz do Epica lub nowe PBI w backlogu).
+> PO notuje feedback w Jira (komentarz do Epica lub nowa Story w backlogu).
 
 ---
 
@@ -74,8 +74,8 @@ Odczytaj lub pokaż fragment ukończonego tekstu.
 
 ### Velocity sprintu
 
-1. Otwórz ADO → Boards → Backlogs → Sprint 1
-2. Zsumuj Story Points PBI o statusie **Done**
+1. Otwórz Jira → Backlog → Sprint 1
+2. Zsumuj Story Points Story o statusie **Done**
 3. To jest **Velocity** waszego sprintu
 
 | Zespół | SP planowane | SP Done | Velocity | % realizacji |
@@ -87,7 +87,7 @@ Odczytaj lub pokaż fragment ukończonego tekstu.
 
 ### Burndown Chart
 
-1. Boards → Analytics → Burndown
+1. Reports → Burndown Chart
 2. Powiedz co widać:
    - Linia idealna vs. rzeczywista
    - Czy praca była równomiernie rozłożona?

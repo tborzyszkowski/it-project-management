@@ -37,16 +37,15 @@ Zadaj każdemu Developerowi kolejno 3 pytania. Odpowiedź powinna być **krótka
 
 Dla każdego zgłoszonego impedimentu:
 
-1. Wróć do komputera i utwórz Work Item w ADO:
-   - **Boards → New Work Item → Impediment**
+1. Wróć do komputera i utwórz Task w Jira:
+   - **„+ Create"** → Task
    - Tytuł: np. `"DEV1 nie ma przykładów stylu noir"`
-   - Opis: co blokuje, kto zgłosił, kiedy
-   - Assigned To: Scrum Master
-   - Status: Active
+   - Etykieta: `impediment`, Assigned To: Scrum Master
+   - Status: In Progress
 
 2. Spróbuj natychmiast usunąć przeszkodę:
    - Problem z AI → podaj link do Copilot
-   - Problem z ADO → sprawdź uprawnienia
+   - Problem z Jira → sprawdź uprawnienia (Project settings → Access)
    - Problem merytoryczny → zaproponuj pair-writing z innym Developerem
 
 ---

@@ -18,7 +18,7 @@ zbierają feedback i oceniają Velocity sprintu.
 |---|---|
 | 0:00–0:02 | Prowadzący wyjaśnia cel Sprint Review |
 | 0:02–0:12 | Prezentacje zespołów (~3 min/zespół, max 4 zespoły) |
-| 0:12–0:15 | Omówienie metryk w ADO (Velocity, Burndown) |
+| 0:12–0:15 | Omówienie metryk w Jira (Velocity, Burndown) |
 
 ---
 
@@ -48,4 +48,4 @@ zbierają feedback i oceniają Velocity sprintu.
 - Pilnuj czasu: max 3 minuty na zespół.
 - Zachęcaj do zadawania pytań z perspektywy czytelnika (stakeholdera).
 - Jeśli żaden zespół nie ma Done PBI – to też jest wynik. Dlaczego tak się stało?
-- Wyświetl Burndown Chart z ADO – omów co znaczą dane.
+- Wyświetl Burndown Chart z Jira (Reports → Burndown Chart) – omów co znaczą dane.

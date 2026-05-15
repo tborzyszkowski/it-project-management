@@ -63,10 +63,10 @@ Każda osoba po kolei czyta swoje odpowiedzi. SM grupuje na tablicy / flipcharci
 - Przerywanie Daily Scrum rozmowami bocznymi
 - Zmienianie wymagań PBI w trakcie sprintu
 - Zaczynanie nowych zadań bez kończenia poprzednich
-- Praca bez aktualizowania ADO na bieżąco
+- Praca bez aktualizowania Jiry na bieżąco
 
 **CONTINUE (co kontynuować):**
-- Codzienne (tu: bieżące) aktualizowanie tablicy w ADO
+- Codzienne (tu: bieżące) aktualizowanie tablicy w Jira
 - Podział na role – każdy wiedział co robi
 - Korzystanie z AI jako wsparcia, nie zastępstwa
 - Szybka komunikacja przy problemach z fabułą
@@ -83,14 +83,13 @@ SM wybiera odpowiedź z **największą liczbą głosów** → to jest **Action I
 
 ---
 
-### Krok 5 – Zapisanie wyników w ADO Wiki (0:13–0:15)
+### Krok 5 – Zapisanie wyników w Jira (0:13–0:15)
 
 **Wykonuje: Scrum Master**
 
-1. Przejdź do **Overview → Wiki**
-2. Kliknij **„+ New page"**
-3. Utwórz stronę: `Retrospektywa Sprint 1`
-4. Wklej poniższy szablon i uzupełnij:
+1. Kliknij **„+ Create"** → Task
+2. Tytuł: `Retrospektywa Sprint 1`
+3. W opisie wklej poniższy szablon i uzupełnij:
 
 ```markdown
 # Retrospektywa Sprint 1

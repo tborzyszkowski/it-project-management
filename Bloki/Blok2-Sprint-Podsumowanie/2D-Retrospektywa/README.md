@@ -8,7 +8,7 @@
 ## Cel dydaktyczny
 
 Studenci przeprowadzają retrospektywę metodą Start/Stop/Continue,  
-formułują konkretne usprawnienia procesu i zapisują je w ADO Wiki.
+formułują konkretne usprawnienia procesu i zapisują je jako Task w Jira.
 
 ---
 
@@ -20,7 +20,7 @@ formułują konkretne usprawnienia procesu i zapisują je w ADO Wiki.
 | 0:02–0:08 | Każdy uczestnik wypełnia Start/Stop/Continue |
 | 0:08–0:12 | Grupowanie i dyskusja odpowiedzi |
 | 0:12–0:14 | Wybór 1 usprawnienia do wdrożenia |
-| 0:14–0:15 | SM zapisuje wyniki w ADO Wiki |
+| 0:14–0:15 | SM zapisuje wyniki jako Task w Jira |
 
 ---
 
@@ -47,7 +47,7 @@ formułują konkretne usprawnienia procesu i zapisują je w ADO Wiki.
 ## Wynik retrospektywy
 
 Każdy zespół wybiera **1 usprawnienie** do wdrożenia w następnym sprincie  
-i zapisuje je w ADO Wiki jako Plan Działania.
+i zapisuje je jako **Task** w Jira (tytuł: „Retrospektywa Sprint 1 – Plan Działania").
 
 ---
 
